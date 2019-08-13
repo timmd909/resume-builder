@@ -3,19 +3,15 @@ resume:
   # I did this as cheap obfuscation method to make scrapping just a little
   # bit more difficult.
   metadata:
-    - key:   phone_number
-      value: '¥412¥•¥758¥•¥0179¥'
-    - key:   email
-      value: '¥tim¥@¥tim¥-¥doerzbacher¥.¥com¥'
-
-    - key:   headline
-      value: "Software Engineer"
-    - key:   introcopy
-      value:
-        I've developed a skill set varied enough to take any web-based
-        idea from initial concept, to design, and all the way through
-        development to the finished implementation. I'm most comfortable
-        with open source software.
+    phone_number: '¥412¥•¥758¥•¥0179¥'
+    email: '¥tim¥@¥tim¥-¥doerzbacher¥.¥com¥'
+    headline: 'Software Engineer'
+    github: https://github.com/timmd909/
+    introcopy:
+      I've developed a skill set varied enough to take any web-based
+      idea from initial concept, to design, and all the way through
+      development to the finished implementation. I'm most comfortable
+      with open source software.
 
   languages:
     title: "Languages"
