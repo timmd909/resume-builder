@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/timmd909/resume-builder/issues"
   },
-  "homepage": "https://github.com/timmd909/resume-builder#readme"
+  "homepage": "https://github.com/timmd909/resume-builder#readme",
+  "dependencies": {
+    "grunt": "^1.0.4"
+  }
 }
