@@ -3,15 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-
-    <title>Tim Doerzbacher &mdash; R&eacute;sum&eacute;</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Tim Doerzbacher &mdash; {{ metadata.headline }} &mdash; R&eacute;sum&eacute;</title>
   </head>
   <body>
-    <h1>Tim Doerzbacher &mdash; <%= metadata.headline %></h1>
+    <h1>Tim Doerzbacher &mdash; {{ metadata.headline }}</h1>
 
-    <p><%= metadata.introcopy %></p>
+    <p>{{ metadata.introcopy }}</p>
 
     <h1>Contact Info</h1>
 
@@ -28,7 +26,7 @@
 
     <p>References available upon request.</p>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
   </body>
 </html>
