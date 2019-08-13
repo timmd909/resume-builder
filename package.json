@@ -1,0 +1,16 @@
+{
+  "name": "resume-builder",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Simple resume building solution",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timmd909/resume-builder.git"
+  },
+  "author": "Tim Doerzbacher",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/timmd909/resume-builder/issues"
+  },
+  "homepage": "https://github.com/timmd909/resume-builder#readme"
+}
