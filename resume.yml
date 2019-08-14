@@ -1,284 +1,283 @@
-resume:
-  # Important note: for all metadata, ¥ will be stripped output.
-  # I did this as cheap obfuscation method to make scrapping just a little
-  # bit more difficult.
-  metadata:
-    phone_number: '¥412¥•¥758¥•¥0179¥'
-    email: '¥tim¥@¥tim¥-¥doerzbacher¥.¥com¥'
-    headline: 'Software Engineer'
-    github: https://github.com/timmd909/
-    introcopy:
-      I've developed a skill set varied enough to take any web-based
-      idea from initial concept, to design, and all the way through
-      development to the finished implementation. I'm most comfortable
-      with open source software.
+# Important note: for all metadata, ¥ will be stripped output.
+# I did this as cheap obfuscation method to make scrapping just a little
+# bit more difficult.
+metadata:
+  phone_number: '¥412¥•¥758¥•¥0179¥'
+  email: '¥tim¥@¥tim¥-¥doerzbacher¥.¥com¥'
+  headline: 'Software Engineer'
+  github: https://github.com/timmd909/
+  introcopy:
+    I've developed a skill set varied enough to take any web-based
+    idea from initial concept, to design, and all the way through
+    development to the finished implementation. I'm most comfortable
+    with open source software.
 
-  languages:
-    title: "Languages"
-    entries:
-      - { name: "ActionScript", level: 5 }
-      - { name: "Bash"        , level: 4 }
-      - { name: "C/C++"       , level: 3 }
-      - { name: "CSS"         , level: 5 }
-      - { name: "Erlang"      , level: 2 }
-      - { name: "HTML"        , level: 5 }
-      - { name: "JavaScript"  , level: 5 }
-      - { name: "LESS"        , level: 4 }
-      - { name: "MXML"        , level: 4 }
-      - { name: "PHP"         , level: 5 }
-      - { name: "Python"      , level: 2 }
-      - { name: "SASS"        , level: 4 }
-      - { name: "SQL"         , level: 4 }
-      - { name: "Yaml"        , level: 5 }
+languages:
+  title: "Languages"
+  entries:
+    - { name: "ActionScript", level: 5 }
+    - { name: "Bash"        , level: 4 }
+    - { name: "C/C++"       , level: 3 }
+    - { name: "CSS"         , level: 5 }
+    - { name: "Erlang"      , level: 2 }
+    - { name: "HTML"        , level: 5 }
+    - { name: "JavaScript"  , level: 5 }
+    - { name: "LESS"        , level: 4 }
+    - { name: "MXML"        , level: 4 }
+    - { name: "PHP"         , level: 5 }
+    - { name: "Python"      , level: 2 }
+    - { name: "SASS"        , level: 4 }
+    - { name: "SQL"         , level: 4 }
+    - { name: "Yaml"        , level: 5 }
 
-  tools:
-    title: "Technologies"
-    entries:
-      - { name: "Adobe Creative Suite", level: 5 }
-      - { name: "Angular"             , level: 2 }
-      - { name: "Ansible"             , level: 3 }
-      - { name: "Apache"              , level: 4 }
-      - { name: "Bootstrap"           , level: 5 }
-      - { name: "CasperJS"            , level: 5 }
-      - { name: "CentOS"              , level: 3 }
-      - { name: "CodeIgniter"         , level: 4 }
-      - { name: "DurandalJS"          , level: 5 }
-      - { name: "Eclipse"             , level: 5 }
-      - { name: "ejabberd"            , level: 3 }
-      - { name: "Facebook APIs"       , level: 3 }
-      - { name: "FreeCAD"             , level: 4 }
-      - { name: "Git"                 , level: 5 }
-      - { name: "Grep"                , level: 5 }
-      - { name: "Grunt"               , level: 5 }
-      - { name: "Jenkins"             , level: 4 }
-      - { name: "jQuery"              , level: 5 }
-      - { name: "Knockout"            , level: 5 }
-      - { name: "MediaWiki"           , level: 3 }
-      - { name: "MySQL/MariaDB"       , level: 5 }
-      - { name: "Nagios"              , level: 3 }
-      - { name: "NightwatchJS"        , level: 4 }
-      - { name: "NodeJS"              , level: 4 }
-      - { name: "Phabricator"         , level: 3 }
-      - { name: "PHPUnit"             , level: 4 }
-      - { name: "PostgreSQL"          , level: 3 }
-      - { name: "Python"              , level: 2 }
-      - { name: "QUnit"               , level: 5 }
-      - { name: "Rasbian"             , level: 5 }
-      - { name: "React"               , level: 3 }
-      - { name: "RequireJS"           , level: 5 }
-      - { name: "Selenium"            , level: 4 }
-      - { name: "Subversion"          , level: 5 }
-      - { name: "Symfony2"            , level: 4 }
-      - { name: "Thrift"              , level: 3 }
-      - { name: "Ubuntu"              , level: 5 }
-      - { name: "WordPress"           , level: 3 }
+tools:
+  title: "Technologies"
+  entries:
+    - { name: "Adobe Creative Suite", level: 5 }
+    - { name: "Angular"             , level: 2 }
+    - { name: "Ansible"             , level: 3 }
+    - { name: "Apache"              , level: 4 }
+    - { name: "Bootstrap"           , level: 5 }
+    - { name: "CasperJS"            , level: 5 }
+    - { name: "CentOS"              , level: 3 }
+    - { name: "CodeIgniter"         , level: 4 }
+    - { name: "DurandalJS"          , level: 5 }
+    - { name: "Eclipse"             , level: 5 }
+    - { name: "ejabberd"            , level: 3 }
+    - { name: "Facebook APIs"       , level: 3 }
+    - { name: "FreeCAD"             , level: 4 }
+    - { name: "Git"                 , level: 5 }
+    - { name: "Grep"                , level: 5 }
+    - { name: "Grunt"               , level: 5 }
+    - { name: "Jenkins"             , level: 4 }
+    - { name: "jQuery"              , level: 5 }
+    - { name: "Knockout"            , level: 5 }
+    - { name: "MediaWiki"           , level: 3 }
+    - { name: "MySQL/MariaDB"       , level: 5 }
+    - { name: "Nagios"              , level: 3 }
+    - { name: "NightwatchJS"        , level: 4 }
+    - { name: "NodeJS"              , level: 4 }
+    - { name: "Phabricator"         , level: 3 }
+    - { name: "PHPUnit"             , level: 4 }
+    - { name: "PostgreSQL"          , level: 3 }
+    - { name: "Python"              , level: 2 }
+    - { name: "QUnit"               , level: 5 }
+    - { name: "Rasbian"             , level: 5 }
+    - { name: "React"               , level: 3 }
+    - { name: "RequireJS"           , level: 5 }
+    - { name: "Selenium"            , level: 4 }
+    - { name: "Subversion"          , level: 5 }
+    - { name: "Symfony2"            , level: 4 }
+    - { name: "Thrift"              , level: 3 }
+    - { name: "Ubuntu"              , level: 5 }
+    - { name: "WordPress"           , level: 3 }
 
-  skills:
-    title: "Skills & Techniques"
-    entries:
-      - { name: "Agile Development"      , level: 5 }
-      - { name: "Building robots for fun", level: 5 }
-      - { name: "Database Design"        , level: 4 }
-      - { name: "Graphic Design"         , level: 3 }
-      - { name: "LAMP Environments"      , level: 5 }
-      - { name: "Linux Administration"   , level: 4 }
-      - { name: "/Regular Expressions/"  , level: 5 }
-      - { name: "Website Design"         , level: 4 }
+skills:
+  title: "Skills & Techniques"
+  entries:
+    - { name: "Agile Development"      , level: 5 }
+    - { name: "Building robots for fun", level: 5 }
+    - { name: "Database Design"        , level: 4 }
+    - { name: "Graphic Design"         , level: 3 }
+    - { name: "LAMP Environments"      , level: 5 }
+    - { name: "Linux Administration"   , level: 4 }
+    - { name: "/Regular Expressions/"  , level: 5 }
+    - { name: "Website Design"         , level: 4 }
 
-  operating_systems:
-    title: "Operating Systems"
-    entries:
-      - { name: "GNU/Linux", level: 5 }
-      - { name: "Mac OS X" , level: 4 }
-      - { name: "Windows"  , level: 1 }
+operating_systems:
+  title: "Operating Systems"
+  entries:
+    - { name: "GNU/Linux", level: 5 }
+    - { name: "Mac OS X" , level: 4 }
+    - { name: "Windows"  , level: 1 }
 
-  experience:
-    title: "Work Experience"
-    entries:
-      - name: Opus One Interactive
-        description: Senior Engineer
-        responsibilities:
-          - description:
-              Added continuous integration tests to our build process
-            notes:
-              - Integration tests are run using custom GitLab runners
-              - Configured runners to run Selenium headless using Xvfb
-              - NightwatchJS is used to drive the Selenium tests
-          - description:
-              Leading the graduation migration from legacy PHP code to PSR
-              compatible code using Composer libraries
-            notes:
-              - Moving to PSR compatible code was done for better code
-                analysis, coverage, and code completion for quicker development
-          - description:
-              Fully automated release process
-            notes:
-              - Used Symfony based console commands to automate the creation
-                of release branches, and their associated merge requests
-                via Gitlab's API
-              - Upon successfully passing all tests and every thing is merged,
-                a release tag is automatically cut and pushed.
-              - Added Slack integration to alert developers to the progress
-                of the release process.
-          - description:
-              Created and implemented roadmap to move the UI off of legacy
-              CSS towards using Bootstrap 4 for styling
-            notes:
-              - I did any necessary adjustments and modifications to Boostrap 4
-                to make it appear similar to the legacy styling.
-              - Switching to Bootstrap alleviated styling inconsistency issues
-                caused primarily from conflicting CSS rules in the old styling.
-          - description:
-              Added Bootstrap support to gradually move away from legacy libraries
-            notes:
-              - Previously jQuery and Prototype were used to provide
-                interactive functionality.
-          - description:
-              Database clean up
-            notes:
-              - Previously, no foreign key checks were used causing
-                database inconsistencies
-              - Refactored code that relied on invalid IDs to implement
-                tri-state logic
-              - Added foreign keys and tests to ensure database sanity
-        duration:
-          start: "2017"
-          end:
+experience:
+  title: "Work Experience"
+  entries:
+    - name: Opus One Interactive
+      description: Senior Engineer
+      responsibilities:
+        - description:
+            Added continuous integration tests to our build process
+          notes:
+            - Integration tests are run using custom GitLab runners
+            - Configured runners to run Selenium headless using Xvfb
+            - NightwatchJS is used to drive the Selenium tests
+        - description:
+            Leading the graduation migration from legacy PHP code to PSR
+            compatible code using Composer libraries
+          notes:
+            - Moving to PSR compatible code was done for better code
+              analysis, coverage, and code completion for quicker development
+        - description:
+            Fully automated release process
+          notes:
+            - Used Symfony based console commands to automate the creation
+              of release branches, and their associated merge requests
+              via Gitlab's API
+            - Upon successfully passing all tests and every thing is merged,
+              a release tag is automatically cut and pushed.
+            - Added Slack integration to alert developers to the progress
+              of the release process.
+        - description:
+            Created and implemented roadmap to move the UI off of legacy
+            CSS towards using Bootstrap 4 for styling
+          notes:
+            - I did any necessary adjustments and modifications to Boostrap 4
+              to make it appear similar to the legacy styling.
+            - Switching to Bootstrap alleviated styling inconsistency issues
+              caused primarily from conflicting CSS rules in the old styling.
+        - description:
+            Added Bootstrap support to gradually move away from legacy libraries
+          notes:
+            - Previously jQuery and Prototype were used to provide
+              interactive functionality.
+        - description:
+            Database clean up
+          notes:
+            - Previously, no foreign key checks were used causing
+              database inconsistencies
+            - Refactored code that relied on invalid IDs to implement
+              tri-state logic
+            - Added foreign keys and tests to ensure database sanity
+      duration:
+        start: "2017"
+        end:
 
-      - name: "Intermedix"
-        description: "Front End Engineer / Release Engineer"
-        responsibilities:
-          - description:
-              Redesigned and implemented new release engineering process.
-            notes:
-              - Fully automated publishing of release assets.
-              - Automated release emails by using ChangeLog.
-              - Organized and developed a branching strategy for release and development.
-              - Redesigned the Grunt project files into a modular structure
-                and more easy to maintain structure.
-              - Integrated Stash with Jenkins to enforce testing before merging.
-              - Created automatic release process that is triggered by
-                new commits or merges to the master branch.
-              - Built and maintain Jenkins build slave.
-              - Added additional linting rules and code to enforce consistency
-                in the code.
-          - description:
-              Oversaw development of new major release of our product.
-            notes:
-              - The original architecture was of a large, monolithic package which
-                was prone to regressions.
-              - Chopped the package in many smaller, more focused packages to
-                allow downstream implementers more flexibility with upgrading and
-                feature sets.
-          - description:
-              Designed and implemented visual regression tests to improve
-              continuous integration.
-            notes:
-              - The testing framework is shared, making any updates or the testing
-                framework to be affected immediately in all existing and new modules
-              - All demos in the documentation are automatically checked
-                for visual regressions.
-          - description:
-              Evaluating and integrating additional third party libraries
-              in the shared toolkit.
-            notes:
-              - Automated patching and tweaking (when necessary) so that
-                all libraries can be used seamlessly with RequireJS.
-        duration:
-          start: "2014"
-          end: "2016"
+    - name: "Intermedix"
+      description: "Front End Engineer / Release Engineer"
+      responsibilities:
+        - description:
+            Redesigned and implemented new release engineering process.
+          notes:
+            - Fully automated publishing of release assets.
+            - Automated release emails by using ChangeLog.
+            - Organized and developed a branching strategy for release and development.
+            - Redesigned the Grunt project files into a modular structure
+              and more easy to maintain structure.
+            - Integrated Stash with Jenkins to enforce testing before merging.
+            - Created automatic release process that is triggered by
+              new commits or merges to the master branch.
+            - Built and maintain Jenkins build slave.
+            - Added additional linting rules and code to enforce consistency
+              in the code.
+        - description:
+            Oversaw development of new major release of our product.
+          notes:
+            - The original architecture was of a large, monolithic package which
+              was prone to regressions.
+            - Chopped the package in many smaller, more focused packages to
+              allow downstream implementers more flexibility with upgrading and
+              feature sets.
+        - description:
+            Designed and implemented visual regression tests to improve
+            continuous integration.
+          notes:
+            - The testing framework is shared, making any updates or the testing
+              framework to be affected immediately in all existing and new modules
+            - All demos in the documentation are automatically checked
+              for visual regressions.
+        - description:
+            Evaluating and integrating additional third party libraries
+            in the shared toolkit.
+          notes:
+            - Automated patching and tweaking (when necessary) so that
+              all libraries can be used seamlessly with RequireJS.
+      duration:
+        start: "2014"
+        end: "2016"
 
-      - name: "PiCon Web Design & Marketing"
-        description: "Subcontractor"
-        responsibilities:
-          - description:
-              Developed a web-based commercial employment application designed
-              for the trucking industry, yet generalized enough to be
-              used by any industry.
-          - description:
-              Rewrote .NET and Microsoft based websites for use on LAMP servers.
-          - description:
-              Lead developer on a project to catalog and digitalize 300,000+
-              documents from a 19th century scholar.
-        duration:
-          start: "2007"
-          end: "2015"
+    - name: "PiCon Web Design & Marketing"
+      description: "Subcontractor"
+      responsibilities:
+        - description:
+            Developed a web-based commercial employment application designed
+            for the trucking industry, yet generalized enough to be
+            used by any industry.
+        - description:
+            Rewrote .NET and Microsoft based websites for use on LAMP servers.
+        - description:
+            Lead developer on a project to catalog and digitalize 300,000+
+            documents from a 19th century scholar.
+      duration:
+        start: "2007"
+        end: "2015"
 
-      - name: "Walking Thumbs"
-        description: "Full Stack Developer"
-        responsibilities:
-          - description:
-              Integrating PHP and ejabberd based nodes and their respective
-              database nodes into a custom XMPP-based messaging system.
-            notes:
-              - Apache Thrift was used to enable direct communication between
-                the PHP and ejabberd nodes.
-              - ejabbard calls originally queried the database through
-                Thrift calls to PHP. Rewrote to have the ejabberd nodes
-                directly query the PostgreSQL cluster when possible.
-          - description:
-              Created syncing algorithm for finding other users on the system.
-            notes:
-              - Hashing was used for matches instead of unencrypted
-                contact information.
-              - This was done to protect privacy concerns while still being
-                able to match other users.
-              - Normalized email and phone numbers to prevent false positives
-                and maximize matches. This was extremely important since all
-                contacts were stored only as hashes.
-          - description:
-              Improved and expanded automated testing suite;
-              increased the code coverage and reduced the execution time.
-          - description:
-              Handled all server related tasks to support other developers
-              working on the Android and iOS clients.
-            notes:
-              - Set up Nagios on an AWS instance.
-              - Installed, configured, and upgrading of servers.
-          - description:
-              Built automated server build scripts for use by the rest of
-              the team, decreasing the server-side ramp up time for new
-              app developers.
-          - description:
-              Handled overseeing implementing company websites.
-        duration:
-          start: "2013"
-          end: "2014"
+    - name: "Walking Thumbs"
+      description: "Full Stack Developer"
+      responsibilities:
+        - description:
+            Integrating PHP and ejabberd based nodes and their respective
+            database nodes into a custom XMPP-based messaging system.
+          notes:
+            - Apache Thrift was used to enable direct communication between
+              the PHP and ejabberd nodes.
+            - ejabbard calls originally queried the database through
+              Thrift calls to PHP. Rewrote to have the ejabberd nodes
+              directly query the PostgreSQL cluster when possible.
+        - description:
+            Created syncing algorithm for finding other users on the system.
+          notes:
+            - Hashing was used for matches instead of unencrypted
+              contact information.
+            - This was done to protect privacy concerns while still being
+              able to match other users.
+            - Normalized email and phone numbers to prevent false positives
+              and maximize matches. This was extremely important since all
+              contacts were stored only as hashes.
+        - description:
+            Improved and expanded automated testing suite;
+            increased the code coverage and reduced the execution time.
+        - description:
+            Handled all server related tasks to support other developers
+            working on the Android and iOS clients.
+          notes:
+            - Set up Nagios on an AWS instance.
+            - Installed, configured, and upgrading of servers.
+        - description:
+            Built automated server build scripts for use by the rest of
+            the team, decreasing the server-side ramp up time for new
+            app developers.
+        - description:
+            Handled overseeing implementing company websites.
+      duration:
+        start: "2013"
+        end: "2014"
 
-      - name: "Kb Port"
-        description: "Server & Web Developer"
-        responsibilities:
-          - description:
-              Handled UI design and implemention on several major software revisions.
-            notes:
-              - Utilized HTML5/CSS3 for maximum compatibility in the future.
-              - Previous versions were hacked to work on Internet Explorer
-                with a proprietary Active X control.
-          - description:
-              Developed RAID-based archival system for compiling video sessions from
-              network connected video recording products.
-            notes:
-              - System has up to 14TB of storage allowing hundreds of days
-                of recording video to be quickly searched, indexed, and shared.
-              - Automated backups to the archival unit eases consolation of
-                student videos and prevents the video records from filling up.
-          - description:
-              Developed customized customer management and inventory management software.
-            notes:
-              - Features included allowing automated upgrades to systems out
-                in the field to facilitate up-selling new products and features.
-              - The system interfaced with copy protection code on the systems
-                to prevent unauthorized cloning.
-          - description:
-              Designed a new video package format to allow exchange of data
-              between the company's various products.
-            notes:
-              - Designed to be easily extendable at future times to allow
-                any type of metadata or otherwise to be added without
-                breaking backwards compatibility.
-              - Utilized OSS tools for maximum inter-compatibility
-                on different platforms.
+    - name: "Kb Port"
+      description: "Server & Web Developer"
+      responsibilities:
+        - description:
+            Handled UI design and implemention on several major software revisions.
+          notes:
+            - Utilized HTML5/CSS3 for maximum compatibility in the future.
+            - Previous versions were hacked to work on Internet Explorer
+              with a proprietary Active X control.
+        - description:
+            Developed RAID-based archival system for compiling video sessions from
+            network connected video recording products.
+          notes:
+            - System has up to 14TB of storage allowing hundreds of days
+              of recording video to be quickly searched, indexed, and shared.
+            - Automated backups to the archival unit eases consolation of
+              student videos and prevents the video records from filling up.
+        - description:
+            Developed customized customer management and inventory management software.
+          notes:
+            - Features included allowing automated upgrades to systems out
+              in the field to facilitate up-selling new products and features.
+            - The system interfaced with copy protection code on the systems
+              to prevent unauthorized cloning.
+        - description:
+            Designed a new video package format to allow exchange of data
+            between the company's various products.
+          notes:
+            - Designed to be easily extendable at future times to allow
+              any type of metadata or otherwise to be added without
+              breaking backwards compatibility.
+            - Utilized OSS tools for maximum inter-compatibility
+              on different platforms.
 
-        duration:
-          start: "2008"
-          end: "2013"
+      duration:
+        start: "2008"
+        end: "2013"
