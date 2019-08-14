@@ -25,8 +25,8 @@ const BootstrapCSS = fileContents('node_modules/bootstrap/dist/css/bootstrap.css
 var app = express();
 
 app.get('/', function (request, response) {
-  var context = yaml.load(fs.readFileSync('resume.yml', 'utf8'));
-  var templateSource = fs.readFileSync('resume.tmpl.html', 'utf8');
+  var context = yaml.load(fs.readFileSync('src/resume.yml', 'utf8'));
+  var templateSource = fs.readFileSync('src/resume.tmpl.html', 'utf8');
   var template = handlebars.compile(templateSource);
   var rendered = template(context);
 
