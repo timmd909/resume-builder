@@ -7,7 +7,7 @@
 
 const puppeteer = require('puppeteer');
 
-async function createPDF() {
+async function createPDF(filename) {
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
 
@@ -16,11 +16,21 @@ async function createPDF() {
     // more options.
     waitUntil: 'networkidle0',
   });
-  var pdf = await page.pdf({ path: 'resume.pdf', format: 'Letter' });
+  var pdf = await page.pdf({
+    path: filename,
+    format: 'Letter',
+    printBackground: true,
+    margin: {
+      top: '10mm',
+      right: '0mm',
+      bottom: '10mm',
+      left: '0mm',
+    },
+  });
 
   await browser.close();
 
   return pdf;
 }
 
-createPDF()
+createPDF('resume.pdf');

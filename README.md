@@ -19,7 +19,10 @@ here's some fun YouTube videos:
 
 ## Usage
 
-To be determind...
+Start up the server with `npm start` in one shell, and then
+run `npm run-script generate` in another. Eventually I'd like to
+auto-start the server in the generate command, but it's very low priority
+for now.
 
 ## Helpful Resources
 
