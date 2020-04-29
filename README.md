@@ -20,3 +20,7 @@ here's some fun YouTube videos:
 ## Usage
 
 To be determind...
+
+## Helpful Resources
+
+* [Generating PDF from HTML and Node.js and Puppeteer](https://blog.risingstack.com/pdf-from-html-node-js-puppeteer/)
