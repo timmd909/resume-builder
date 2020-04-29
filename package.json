@@ -19,7 +19,8 @@
     "grunt": "^1.0.4",
     "handlebars": "^4.1.2",
     "jquery": "^3.4.1",
-    "js-yaml": "^3.13.1"
+    "js-yaml": "^3.13.1",
+    "puppeteer": "^3.0.2"
   },
   "scripts": {
     "start": "node index.js"
