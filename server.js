@@ -16,8 +16,8 @@ function fileContents(filename) {
 }
 
 const jQueryJS = fileContents('node_modules/jquery/dist/jquery.js');
-const BootstrapJS = fileContents('node_modules/bootstrap/dist/js/bootstrap.bundle.js');
-const BootstrapCSS = fileContents('node_modules/bootstrap/dist/css/bootstrap.css');
+const BootstrapJS = fileContents('node_modules/timstrap/dist/js/bootstrap.bundle.js');
+const BootstrapCSS = fileContents('node_modules/timstrap/dist/css/bootstrap.css');
 
 //
 // Create simple server and go!

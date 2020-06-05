@@ -5,34 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap.css">
     <title>Tim Doerzbacher &mdash; {{ metadata.headline }} &mdash; R&eacute;sum&eacute;</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      .left-column {
+        background: green;
+        padding-left: 4rem;
+        padding-top: 2rem;
+      }
+      .right-column {
+        background: white;
+        padding-right: 4rem;
+        padding-top: 2rem;
+      }
+      .bottom-bar {
+        background: #553300;
+        color: white;
+        min-height: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+    </style>
   </head>
-  <body>
-    <form class="container">
-      <h1>Tim Doerzbacher &mdash; {{ metadata.headline }}</h1>
+  <body class="container-fluid d-flex flex-column h-100">
+    <div class="row flex-grow-1">
+      <!-- ================================================================ -->
+      <!-- == LEFT COLUMN                                                == -->
+      <!-- ================================================================ -->
+      <div class="col-4 left-column">
+        <div class="alert alert-info">Logo goes here</div>
+        <h1>Tim Doerzbacher &mdash; {{ metadata.headline }}</h1>
 
-      <div class="row">
-        <div class="col">
+        <div>
+          Technology
+        </div>
+
+        <div>
+          Skills
+        </div>
+
+        <div>
+          Languages
+        </div>
+
+        <div>
+          Operating Systems
+        </div>
+
+      </div>
+      <!-- ================================================================ -->
+      <!-- == RIGHT COLUMN                                                == -->
+      <!-- ================================================================ -->
+      <div class="col-8 right-column">
+
+        <div>
           <p>{{ metadata.introcopy }}</p>
         </div>
+
+        <div>
+          <h3>Work History</h3>
+        </div>
+
+        <div>
+          <h3>Where I've Worked</h3>
+        </div>
+
+        <div>
+          <h3>References</h3>
+          <p>References available upon request.</p>
+        </div>
+
+
       </div>
+    </div><!-- / .row -->
+    <div class="row">
+      <div class="col-12 bottom-bar">
+        what do I want to put here?
+      </div>
+    </div><!-- / .row -->
 
-      <h1>Contact Info</h1>
+  </form><!-- /.container -->
 
-      <h1>What I Can Do</h1>
-
-      <h2>Technologies</h2>
-      <h2>Languages</h2>
-      <h2>Skills &amp; Techniques</h2>
-      <h2>Operating Systems</h2>
-
-      <h1>Where I've Worked</h1>
-
-      <h1>References</h1>
-
-      <p>References available upon request.</p>
-    </form><!-- /.container -->
-
-    <script src="jquery.js"></script>
-    <script src="bootstrap.js"></script>
+  <script src="jquery.js"></script>
+  <script src="bootstrap.js"></script>
   </body>
 </html>
