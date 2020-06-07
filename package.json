@@ -32,7 +32,6 @@
     "timstrap": "git+https://github.com/timmd909/timstrap.git"
   },
   "scripts": {
-    "start": "node server.js",
-    "generate": "node generate.js"
+    "start": "grunt build server:debug"
   }
 }
