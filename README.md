@@ -19,10 +19,16 @@ here's some fun YouTube videos:
 
 ## Usage
 
-Start up the server with `npm start` in one shell, and then
-run `npm run-script generate` in another. Eventually I'd like to
-auto-start the server in the generate command, but it's very low priority
-for now.
+Simply run `grunt` to build the latest resume PDF.
+
+## Development
+
+How I do it:
+
+* Run `grunt` once to get everything primed
+* `grunt watch` in one console
+* `grunt server:debug` in anoher
+* Chrome-based browser looking at http://localhost:8080 w/ dev tools open
 
 ## Helpful Resources
 

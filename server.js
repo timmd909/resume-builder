@@ -15,10 +15,6 @@ function fileContents(filename) {
   return fs.readFileSync(filename, 'utf8');
 }
 
-const jQueryJS = fileContents('node_modules/jquery/dist/jquery.js');
-const BootstrapJS = fileContents('node_modules/timstrap/dist/js/bootstrap.bundle.js');
-const BootstrapCSS = fileContents('node_modules/timstrap/dist/css/bootstrap.css');
-
 //
 // Create simple server and go!
 //
@@ -37,19 +33,19 @@ app.get('/', function (request, response) {
 
 app.get('/jquery.js', function (request, response) {
   response.writeHead(200, {'Content-Type': 'application/javascript'});
-  response.write(jQueryJS);
+  response.write(fileContents('build/jquery.js'));
   response.end();
 });
 
 app.get('/bootstrap.css', function (request, response) {
   response.writeHead(200, {'Content-Type': 'text/css;charset=utf-8'});
-  response.write(BootstrapCSS);
+  response.write(fileContents('build/bootstrap.css'));
   response.end();
 });
 
 app.get('/bootstrap.js', function (request, response) {
   response.writeHead(200, {'Content-Type': 'application/javascript'});
-  response.write(BootstrapJS);
+  response.write(fileContents('build/bootstrap.bundle.js'));
   response.end();
 });
 
