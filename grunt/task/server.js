@@ -3,40 +3,30 @@
 //
 // Libraries
 //
+const execSync = require("child_process").execSync;
 const _ = require('lodash');
 const fs = require('fs');
 const express = require('express');
-const handlebars = require('handlebars');
 const yaml = require('js-yaml');
 const grunt = require('grunt');
+var handlebars = require('handlebars');
 
+handlebars.registerHelper('cleanJunk', function (input) {
+  return input.replace(/(¥|https:\/\/)/g, '');
+});
 
 function fileContents(filename) {
   return fs.readFileSync(filename, 'utf8');
 }
 
-const ASSETS = [
-  {
-    'contentType': 'application/javascript',
-    'path': '/bootstrap.js',
-    'filename': 'build/bootstrap.bundle.js',
-  },
-  {
-    'contentType': 'text/css;charset=utf-8',
-    'path': '/bootstrap.css',
-    'filename': 'build/bootstrap.css',
-  },
-  {
-    'contentType': 'application/javascript',
-    'path': '/jquery.js',
-    'filename': 'build/jquery.js',
-  },
-];
-
 var app = express();
 
 app.get('/', function (request, response) {
   var context = yaml.load(fs.readFileSync('src/resume.yml', 'utf8'));
+  // might as well tack in version information for me
+  context.head = execSync('git rev-parse HEAD', {'encoding': 'utf8'}).trim().substr(0, 12);
+  var now = new Date();
+  context.created = now.toISOString().substr(0, 10);
   var templateSource = fs.readFileSync('src/resume.tmpl.html', 'utf8');
   var template = handlebars.compile(templateSource);
   var rendered = template(context);
@@ -46,17 +36,9 @@ app.get('/', function (request, response) {
   response.end();
 });
 
-var assetCallback = _.partial(function (app, asset) {
-  app.get(asset.path, _.partial(function (asset, request, response) {
-    response.writeHead(200, {'Content-Type': asset.contentType});
-    response.write(fileContents(asset.filename));
-    response.end();
-  }, asset));
-}, app);
-
-ASSETS.forEach(assetCallback);
-
+app.use(express.static('build/'));
 var SERVER;
+
 
 async function startServer(done) {
   if (!SERVER) {

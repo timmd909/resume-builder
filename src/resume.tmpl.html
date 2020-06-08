@@ -3,56 +3,62 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="comfortaa/latin.css">
     <title>Tim Doerzbacher &mdash; {{ metadata.headline }} &mdash; R&eacute;sum&eacute;</title>
-    <style>
-      html {
-        height: 100%;
-      }
-      .left-column {
-        padding-left: 4rem;
-        padding-top: 2rem;
-        border-right: 0.25rem solid green;
-      }
-      .right-column {
-        padding-right: 4rem;
-        padding-top: 2rem;
-      }
-      .bottom-bar {
-        margin-top: 0.25rem;
-        background: #553300;
-        color: white;
-        min-height: 2rem;
-        padding-top: 0.5rem;
-        padding-bottom: 2rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
-      }
-    </style>
   </head>
   <body class="container-fluid d-flex flex-column h-100">
     <div class="row flex-grow-1">
       <!-- ================================================================ -->
       <!-- == LEFT COLUMN                                                == -->
       <!-- ================================================================ -->
-      <div class="col-4 left-column">
-        <div class="alert alert-info">Logo goes here</div>
-        <h1>Tim Doerzbacher &mdash; {{ metadata.headline }}</h1>
+      <div id="left-column" class="col-4">
+        <header id="logo-container">
+          <img src="/assets/logo.svg" id="logo">
+          <div class="d-flex flex-column align-self-start">
+            <h1>Tim Doerzbacher</h1>
+            <h2>{{ metadata.headline }}</h2>
+          </div>
+        </header>
+
+        <ul id="contact-info-container" class="list-unstyled">
+          <li>
+            <i class="fa fa-fw fa-phone text-brand-green"></i>
+            {{ cleanJunk metadata.phone_number }}
+          </li>
+          <li>
+            <i class="fa fa-fw fa-envelope-o text-brand-green"></i>
+            <a class="text-dark" href="mailto: {{ cleanJunk metadata.email }}">{{ cleanJunk metadata.email }}</a>
+          </li>
+          <li>
+            <a class="text-dark" href="https://www.tim-doerzbacher.com">
+              <i class="fa fa-fw fa-link text-brand-green"></i>
+              tim-doerzbacher.com
+            </a>
+          </li>
+          <li>
+            <a class="text-dark" href="{{ metadata.github }}">
+              <i class="fa fa-fw fa-github text-brand-green"></i>
+              {{ cleanJunk metadata.github }}
+            </a>
+          </li>
+        </ul>
 
         <div>
-          Technology
+          <h5>Technology</h5>
         </div>
 
         <div>
-          Skills
+          <h5>Skills</h5>
         </div>
 
         <div>
-          Languages
+          <h5>Languages</h5>
         </div>
 
         <div>
-          Operating Systems
+          <h5>Operating Systems</h5>
         </div>
 
       </div>
@@ -60,37 +66,40 @@
       <!-- ================================================================ -->
       <!-- == RIGHT COLUMN                                                == -->
       <!-- ================================================================ -->
-      <div class="col-8 right-column">
+      <div id="right-column" class="col-8">
 
         <div>
           <p>{{ metadata.introcopy }}</p>
         </div>
 
-        <div>
+        <section>
           <h3>Work History</h3>
-        </div>
 
-        <div>
-          <h3>Where I've Worked</h3>
-        </div>
+          <ul class="list-unstyled">
 
-        <div>
+          </ul>
+        </section>
+
+        <section>
           <h3>References</h3>
           <p>References available upon request.</p>
-        </div>
+        </section>
 
 
       </div>
     </div><!-- / .row -->
-    <div class="row">
-      <div class="col-12 bottom-bar">
-        what do I want to put here?
+    <div id="bottom-bar" class="row">
+      <div class="col-3">Created {{ created }}</div>
+      <div class="col-6 text-center">
+        Visit <a href="http://tim-doerzbacher.com">http://tim-doerzbacher.com</a>
+        for latest version.
       </div>
+      <div class="col-3 text-right">Commit {{ head }}</div>
     </div><!-- / .row -->
 
-  </form><!-- /.container -->
+  </form><!-- /.container-fluid -->
 
-  <script src="jquery.js"></script>
-  <script src="bootstrap.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
   </body>
 </html>

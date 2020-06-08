@@ -17,5 +17,93 @@
 //
 // RESUME SPECIFIC STYLES
 //
+html {
+  height: 100%;
+  width: 100%;
+}
 
-// none yet :-(
+a, a:link, a:active, a:visited {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Comfortaa, $font-family-sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5pt;
+}
+
+#logo-container {
+  @extend .d-flex;
+  @extend .flex-row;
+
+
+  h1 {
+    @extend .mt-2;
+    @extend .mb-0;
+    font-size: 18pt;
+    line-height: 20pt;
+    letter-spacing: 0;
+  }
+
+  h2 {
+    @extend .m-0;
+    font-size: $font-size-base * 0.85;
+    font-size: 10pt;
+    line-height: 12pt;
+  }
+
+  #logo {
+    @extend .mr-2;
+    height: 64pt;
+    width: 64pt;
+    margin-top: -2pt;
+    margin-left: -12pt;
+  }
+}
+
+#contact-info-container {
+  @extend .mt-3;
+  .fa {
+    @extend .mr-1;
+  }
+}
+
+
+#left-column {
+  padding-left: $margin-left-right;
+  padding-top: $margin-top-bottom;
+}
+
+#right-column {
+  padding-right: $margin-left-right;
+  padding-top: $margin-top-bottom;
+}
+
+#bottom-bar {
+  // @extend .d-flex;
+  // @extend .flex-row;
+  @extend .text-dark;
+
+  a {
+    @extend .text-dark;
+  }
+
+  background: $gray-300;
+  padding-top: 0.5rem;
+
+  padding-bottom: $margin-top-bottom;
+  padding-left: $margin-left-right;
+  padding-right: $margin-left-right;
+
+  font-size: $font-size-base * 0.75;
+}
+
+.text-brand-red {
+  color: $brand-red;
+}
+.text-brand-green {
+  color: $brand-green;
+}
+.text-brand-blue {
+  color: $brand-blue;
+}

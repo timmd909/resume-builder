@@ -14,6 +14,12 @@ async function createPDF(done, filename) {
     // more options.
     waitUntil: 'networkidle0',
   });
+  // puppeteer automatically defaults to A3, which isn't what I ever want.
+  // Going w/ auto seems to make things work the same on the command line
+  // and inside the browser.
+  await page.addStyleTag({
+    content: '@page { size: auto; }',
+  });
 
   grunt.log.writeln('Saving PDF');
   var pdf = await page.pdf({
@@ -21,9 +27,9 @@ async function createPDF(done, filename) {
     format: 'Letter',
     printBackground: true,
     margin: {
-      top: '10mm',
+      top: '0mm',
       right: '0mm',
-      bottom: '10mm',
+      bottom: '0mm',
       left: '0mm',
     },
   });

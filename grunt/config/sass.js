@@ -25,7 +25,7 @@ module.exports = {
       // 'outputStyle': 'nested',
     }, DEFAULT_OPTIONS),
     files: {
-      'build/bootstrap.css': MAIN_SOURCE,
+      'build/css/bootstrap.css': MAIN_SOURCE,
     },
   },
 };
