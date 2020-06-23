@@ -11,7 +11,7 @@
 // IMPORT TIMSTRAP/BOOTSTRAP
 //
 
-@import '../node_modules/timstrap/scss/variables';
+@import '../node_modules/timstrap/scss/timstrap/variables';
 @import '../node_modules/timstrap/scss/timstrap';
 
 //
@@ -96,14 +96,4 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: $margin-left-right;
 
   font-size: $font-size-base * 0.75;
-}
-
-.text-brand-red {
-  color: $brand-red;
-}
-.text-brand-green {
-  color: $brand-green;
-}
-.text-brand-blue {
-  color: $brand-blue;
 }
