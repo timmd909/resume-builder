@@ -18,8 +18,17 @@
 // RESUME SPECIFIC STYLES
 //
 html {
-  height: 100%;
+  // height: 100%;
   width: 100%;
+}
+
+@page {
+  margin: 1cm 1.5cm;
+}
+
+// handy utility to prevent line breaks in areas
+.nobreak {
+  page-break-inside: avoid;
 }
 
 a, a:link, a:active, a:visited {
@@ -33,9 +42,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #logo-container {
-  @extend .d-flex;
-  @extend .flex-row;
   @extend .mb-2;
+  @extend .text-center;
 
   h1 {
     @extend .mt-2;
@@ -53,16 +61,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #logo {
-    @extend .mr-2;
-    height: 64pt;
-    width: 64pt;
-    margin-top: -2pt;
-    margin-left: -12pt;
+    height: 128pt;
+    width: 128pt;
   }
 }
 
 #contact-info-container {
-  padding: 0.5rem 0;
+  width: auto;
+  padding: 1rem 0;
+  margin: 0 auto;
 
   .fa {
     @extend .mr-1;
@@ -71,11 +78,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #left-column {
-  padding-left: $margin-left-right;
-  padding-top: $margin-top-bottom;
-
   .sidebar-list {
-    font-size: 75%;
+    font-size: 85%;
 
     .sidebar-list_container {
       @extend .d-flex;
@@ -107,28 +111,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #right-column {
-  padding-right: $margin-left-right;
-  padding-top: $margin-top-bottom;
 }
 
-#bottom-bar {
-  // @extend .d-flex;
-  // @extend .flex-row;
-  @extend .text-dark;
-
-  a {
-    @extend .text-dark;
-  }
-
-  background: $gray-300;
-  padding-top: 0.5rem;
-
-  padding-bottom: $margin-top-bottom;
-  padding-left: $margin-left-right;
-  padding-right: $margin-left-right;
-
-  font-size: $font-size-base * 0.75;
-}
 
 @import 'resume/sections';
 @import 'resume/work-list';

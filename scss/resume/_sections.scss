@@ -1,17 +1,19 @@
-section {
-  margin: 1rem 0;
+#left-column {
+  section {
+    margin: 1rem 0;
 
-  h5 {
-    margin: 0;
-    padding: 0.5rem 0;
-    line-height: 1.1rem;
+    h5 {
+      margin: 0;
+      padding: 0.5rem 0;
+      line-height: 1.1rem;
+    }
   }
 }
 
 #tools-section .sidebar-list_container {
-  max-height: 21rem;
+  max-height: 23rem;
 }
 
 #language-section .sidebar-list_container {
-  max-height: 7rem;
+  max-height: 8rem;
 }
