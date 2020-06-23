@@ -84,7 +84,7 @@ operating_systems:
     - { name: "Windows"  , level: 1 }
 
 experience:
-  title: "Work Experience"
+  title: "Work History"
   entries:
     - name: Opus One Interactive
       description: Senior Software Engineer

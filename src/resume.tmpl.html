@@ -95,12 +95,28 @@
           <p>{{ metadata.introcopy }}</p>
         </div>
 
-        <section>
-          <h3>Work History</h3>
+        <section id="work-history-section">
+          <h3>{{ experience.title }}</h3>
 
-          <ul class="list-unstyled">
-
-          </ul>
+          <div class="work-list">
+            {{#experience.entries}}
+            <div class="row work-item">
+              <div class="col work-item_duration">
+                <span class="work-item_end">{{#if duration.end }}{{ duration.end }}{{ else }}Now{{/if}}</span>
+                <div class="work-item_duration-divider">
+                  <div class="work-item_duration-divider_inside"></div>
+                </div>
+                <span class="work-item_start">{{ duration.start }}</span>
+              </div>
+              <div class="col">
+                <h5 class="d-flex">
+                  <span class="flex-grow-1">{{ name }}</span>
+                  <small>{{ description }}</small>
+                </h5>
+              </div>
+            </div>
+            {{/experience.entries}}
+          </div>
         </section>
 
         <section>
