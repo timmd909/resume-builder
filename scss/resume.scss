@@ -5,7 +5,7 @@
 // to have the highest level of similarity
 //
 
-@import 'variables';
+@import 'resume/variables';
 
 //
 // IMPORT TIMSTRAP/BOOTSTRAP
@@ -62,6 +62,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contact-info-container {
+  padding: 0.5rem 0;
+
   .fa {
     @extend .mr-1;
   }
@@ -71,6 +73,37 @@ h1, h2, h3, h4, h5, h6 {
 #left-column {
   padding-left: $margin-left-right;
   padding-top: $margin-top-bottom;
+
+  .sidebar-list {
+    font-size: 75%;
+
+    .sidebar-list_container {
+      @extend .d-flex;
+      @extend .flex-column;
+      @extend .flex-wrap;
+    }
+
+    .sidebar-list_item {
+      @extend .d-flex;
+      @extend .align-items-center;
+
+      span {
+        @extend .d-flex;
+        @extend .flex-grow-1;
+      }
+      i {
+        @extend .mr-1;
+      }
+      .xp {
+        // nothing yet
+      }
+      .xp-1::before { content: "\f244" !important; color: lighten($brand-red, 10%); }
+      .xp-2::before { content: "\f243" !important; color: lighten($brand-green, 20%); }
+      .xp-3::before { content: "\f242" !important; color: lighten($brand-green, 10%); }
+      .xp-4::before { content: "\f241" !important; color: lighten($brand-green, 0%); }
+      .xp-5::before { content: "\f240" !important; color: darken($brand-green, 10%); }
+    }
+  }
 }
 
 #right-column {
@@ -96,3 +129,5 @@ h1, h2, h3, h4, h5, h6 {
 
   font-size: $font-size-base * 0.75;
 }
+
+@import 'resume/sections';

@@ -22,44 +22,67 @@
           </div>
         </header>
 
-        <ul id="contact-info-container" class="list-unstyled">
-          <li>
-            <i class="fa fa-fw fa-phone text-brand-green"></i>
-            {{ cleanJunk metadata.phone_number }}
-          </li>
-          <li>
-            <i class="fa fa-fw fa-envelope-o text-brand-green"></i>
-            <a class="text-dark" href="mailto: {{ cleanJunk metadata.email }}">{{ cleanJunk metadata.email }}</a>
-          </li>
-          <li>
-            <a class="text-dark" href="https://www.tim-doerzbacher.com">
-              <i class="fa fa-fw fa-link text-brand-green"></i>
-              tim-doerzbacher.com
-            </a>
-          </li>
-          <li>
-            <a class="text-dark" href="{{ metadata.github }}">
-              <i class="fa fa-fw fa-github text-brand-green"></i>
-              {{ cleanJunk metadata.github }}
-            </a>
-          </li>
-        </ul>
+        <section id="contact-info-container">
+          <ul class="list-unstyled m-0">
+            <li>
+              <i class="fa fa-fw fa-phone text-brand-green"></i>
+              {{ cleanJunk metadata.phone_number }}
+            </li>
+            <li>
+              <i class="fa fa-fw fa-envelope-o text-brand-green"></i>
+              <a class="text-dark" href="mailto: {{ cleanJunk metadata.email }}">{{ cleanJunk metadata.email }}</a>
+            </li>
+            <li>
+              <a class="text-dark" href="https://www.tim-doerzbacher.com">
+                <i class="fa fa-fw fa-link text-brand-green"></i>
+                tim-doerzbacher.com
+              </a>
+            </li>
+            <li>
+              <a class="text-dark" href="{{ metadata.github }}">
+                <i class="fa fa-fw fa-github text-brand-green"></i>
+                {{ cleanJunk metadata.github }}
+              </a>
+            </li>
+          </ul>
+        </section>
 
-        <div>
-          <h5>Technology</h5>
-        </div>
+        <section id="tools-section" class="sidebar-list">
+          <h5>{{ tools.title }}</h5>
+          <!-- <div class="d-flex flex-column flex-wrap"> -->
+          <div class="sidebar-list_container">
+            {{#tools.entries}}
+              {{>sidebarListItem}}
+            {{/tools.entries}}
+          </div>
+        </section>
 
-        <div>
-          <h5>Skills</h5>
-        </div>
+        <section id="skills-section" class="sidebar-list">
+          <h5>{{ skills.title }}</h5>
+          <div class="sidebar-list_container">
+            {{#skills.entries}}
+              {{>sidebarListItem}}
+            {{/skills.entries}}
+          </div>
+        </section>
 
-        <div>
-          <h5>Languages</h5>
-        </div>
+        <section id="language-section" class="sidebar-list">
+          <h5>{{ languages.title }}</h5>
+          <div class="sidebar-list_container">
+            {{#languages.entries}}
+              {{>sidebarListItem}}
+            {{/languages.entries}}
+          </div>
+        </section>
 
-        <div>
-          <h5>Operating Systems</h5>
-        </div>
+        <section class="sidebar-list">
+          <h5>{{ operating_systems.title }}</h5>
+          <div class="sidebar-list_container">
+            {{#operating_systems.entries}}
+              {{>sidebarListItem}}
+            {{/operating_systems.entries}}
+          </div>
+        </section>
 
       </div>
 
@@ -90,7 +113,7 @@
     </div><!-- / .row -->
     <div id="bottom-bar" class="row">
       <div class="col-3">Created {{ created }}</div>
-      <div class="col-6 text-center">
+      <div class="col-auto text-center">
         Visit <a href="http://tim-doerzbacher.com">http://tim-doerzbacher.com</a>
         for latest version.
       </div>

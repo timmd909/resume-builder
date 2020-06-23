@@ -15,6 +15,14 @@ handlebars.registerHelper('cleanJunk', function (input) {
   return input.replace(/(¥|https:\/\/)/g, '');
 });
 
+handlebars.registerPartial(
+  'sidebarListItem',
+  '<div class="sidebar-list_item">' +
+  '<i class="fa xp xp-{{ level }}"></i>' +
+  '<span>{{ name }}</span>' +
+  '</div>'
+);
+
 function fileContents(filename) {
   return fs.readFileSync(filename, 'utf8');
 }
