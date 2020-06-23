@@ -27,10 +27,10 @@ async function createPDF(done, filename) {
     format: 'Letter',
     printBackground: true,
     margin: {
-      top: '0mm',
-      right: '0mm',
-      bottom: '0mm',
-      left: '0mm',
+      top: '10mm',
+      right: '15mm',
+      bottom: '10mm',
+      left: '15mm',
     },
   });
 
