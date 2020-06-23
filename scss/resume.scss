@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 #logo-container {
   @extend .d-flex;
   @extend .flex-row;
-
+  @extend .mb-2;
 
   h1 {
     @extend .mt-2;
@@ -62,7 +62,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contact-info-container {
-  @extend .mt-3;
   .fa {
     @extend .mr-1;
   }
