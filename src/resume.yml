@@ -28,24 +28,24 @@ languages:
 tools:
   title: "Technologies"
   entries:
-    - { name: "Adobe Creative Suite", level: 5 }
     - { name: "Angular"             , level: 2 }
     - { name: "Ansible"             , level: 3 }
     - { name: "Apache"              , level: 4 }
-    - { name: "Atlassian (Jira/Confluence/etc)", level: 4 }
     - { name: "Bootstrap"           , level: 5 }
     - { name: "CodeIgniter"         , level: 4 }
-    - { name: "Durandal"            , level: 5 }
     - { name: "DataTables"          , level: 5 }
+    - { name: "Durandal"            , level: 5 }
     - { name: "ejabberd"            , level: 3 }
     - { name: "FreeCAD"             , level: 4 }
     - { name: "Git"                 , level: 5 }
     - { name: "Grep"                , level: 5 }
     - { name: "Grunt"               , level: 5 }
     - { name: "Jenkins"             , level: 4 }
+    - { name: "Jira"                , level: 4 }
     - { name: "jQuery"              , level: 5 }
     - { name: "Knockout"            , level: 5 }
-    - { name: "MySQL/MariaDB"       , level: 5 }
+    - { name: "MariaDB"             , level: 5 }
+    - { name: "MySQL"               , level: 5 }
     - { name: "Nagios"              , level: 3 }
     - { name: "Nightwatch.js"       , level: 4 }
     - { name: "NodeJS"              , level: 4 }
@@ -67,14 +67,14 @@ tools:
 skills:
   title: "Skills"
   entries:
-    - { name: "Agile Development"      , level: 5 }
-    - { name: "Building robots for fun", level: 5 }
-    - { name: "Database Design"        , level: 4 }
-    - { name: "Graphic Design"         , level: 3 }
-    - { name: "LAMP Environments"      , level: 5 }
-    - { name: "Linux Administration"   , level: 4 }
-    - { name: "/Regular Expressions/"  , level: 5 }
-    - { name: "Website Design"         , level: 4 }
+    - { name: "Agile Development"        , level: 5 }
+    - { name: "Hobbyist Roboticist"      , level: 3 }
+    - { name: "Database Design"          , level: 4 }
+    - { name: "Graphic Design"           , level: 3 }
+    - { name: "LAMP Environments"        , level: 5 }
+    - { name: "Linux Administration"     , level: 4 }
+    - { name: "/Regular Expressions/"    , level: 5 }
+    - { name: "Website Design"           , level: 4 }
 
 operating_systems:
   title: "Operating Systems"
