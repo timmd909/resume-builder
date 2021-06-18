@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer');
 const grunt = require('grunt');
 
 async function createPDF(done, filename) {
-  grunt.log.writeln('Creating browse');
+  grunt.log.writeln('Creating browser');
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
 
