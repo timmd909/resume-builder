@@ -3,61 +3,52 @@
 # bit more difficult.
 metadata:
   phone_number: '¥412¥•¥758¥•¥0179¥'
-  email: '¥tim¥@¥tim¥-¥doerzbacher¥.¥com¥'
+  email: '¥tim¥@¥t¥im¥-¥doerz¥bacher¥.¥c¥om¥'
   headline: 'Software Engineer'
   github: https://github.com/timmd909/
-  introcopy:
-    I've developed a skill set varied enough to take any web-based
-    idea from initial concept, to design, and all the way through
-    development to the finished implementation. I'm most comfortable
-    with open source software.
+  intro_points:
+    - 20+ years Linux power user and administration experience
+    - 10+ years experience delivering software solutions
 
 languages:
   title: "Languages"
   entries:
-    - { name: "ActionScript", level: 5 }
     - { name: "Bash"        , level: 4 }
     - { name: "C/C++"       , level: 3 }
-    - { name: "CSS"         , level: 5 }
     - { name: "Erlang"      , level: 2 }
-    - { name: "HTML"        , level: 5 }
+    - { name: "HTML/CSS"    , level: 5 }
     - { name: "JavaScript"  , level: 5 }
     - { name: "LESS"        , level: 4 }
-    - { name: "MXML"        , level: 4 }
     - { name: "PHP"         , level: 5 }
     - { name: "Python"      , level: 2 }
-    - { name: "SASS"        , level: 4 }
+    - { name: "SASS/SCSS"   , level: 4 }
     - { name: "SQL"         , level: 4 }
     - { name: "Yaml"        , level: 5 }
 
 tools:
   title: "Technologies"
   entries:
-    - { name: "Adobe Creative Suite", level: 5 }
     - { name: "Angular"             , level: 2 }
     - { name: "Ansible"             , level: 3 }
     - { name: "Apache"              , level: 4 }
     - { name: "Bootstrap"           , level: 5 }
-    - { name: "CasperJS"            , level: 5 }
-    - { name: "CentOS"              , level: 3 }
     - { name: "CodeIgniter"         , level: 4 }
-    - { name: "DurandalJS"          , level: 5 }
-    - { name: "Eclipse"             , level: 5 }
+    - { name: "DataTables"          , level: 5 }
+    - { name: "Durandal"            , level: 5 }
     - { name: "ejabberd"            , level: 3 }
-    - { name: "Facebook APIs"       , level: 3 }
     - { name: "FreeCAD"             , level: 4 }
     - { name: "Git"                 , level: 5 }
     - { name: "Grep"                , level: 5 }
     - { name: "Grunt"               , level: 5 }
     - { name: "Jenkins"             , level: 4 }
+    - { name: "Jira"                , level: 4 }
     - { name: "jQuery"              , level: 5 }
     - { name: "Knockout"            , level: 5 }
-    - { name: "MediaWiki"           , level: 3 }
-    - { name: "MySQL/MariaDB"       , level: 5 }
+    - { name: "MariaDB"             , level: 5 }
+    - { name: "MySQL"               , level: 5 }
     - { name: "Nagios"              , level: 3 }
-    - { name: "NightwatchJS"        , level: 4 }
+    - { name: "Nightwatch.js"       , level: 4 }
     - { name: "NodeJS"              , level: 4 }
-    - { name: "Phabricator"         , level: 3 }
     - { name: "PHPUnit"             , level: 4 }
     - { name: "PostgreSQL"          , level: 3 }
     - { name: "Python"              , level: 2 }
@@ -70,19 +61,20 @@ tools:
     - { name: "Symfony2"            , level: 4 }
     - { name: "Thrift"              , level: 3 }
     - { name: "Ubuntu"              , level: 5 }
+    - { name: "WebDriver"           , level: 4 }
     - { name: "WordPress"           , level: 3 }
 
 skills:
-  title: "Skills & Techniques"
+  title: "Skills"
   entries:
-    - { name: "Agile Development"      , level: 5 }
-    - { name: "Building robots for fun", level: 5 }
-    - { name: "Database Design"        , level: 4 }
-    - { name: "Graphic Design"         , level: 3 }
-    - { name: "LAMP Environments"      , level: 5 }
-    - { name: "Linux Administration"   , level: 4 }
-    - { name: "/Regular Expressions/"  , level: 5 }
-    - { name: "Website Design"         , level: 4 }
+    - { name: "Agile Development"        , level: 5 }
+    - { name: "Hobbyist Roboticist"      , level: 3 }
+    - { name: "Database Design"          , level: 4 }
+    - { name: "Graphic Design"           , level: 3 }
+    - { name: "LAMP Environments"        , level: 5 }
+    - { name: "Linux Administration"     , level: 4 }
+    - { name: "/Regular Expressions/"    , level: 5 }
+    - { name: "Website Design"           , level: 4 }
 
 operating_systems:
   title: "Operating Systems"
@@ -92,56 +84,83 @@ operating_systems:
     - { name: "Windows"  , level: 1 }
 
 experience:
-  title: "Work Experience"
+  title: "Work History"
   entries:
     - name: Opus One Interactive
-      description: Senior Engineer
+      description: Senior Software Engineer
       responsibilities:
         - description:
-            Added continuous integration tests to our build process
+            Created continuous integration environment to ensure build quality
           notes:
-            - Integration tests are run using custom GitLab runners
-            - Configured runners to run Selenium headless using Xvfb
-            - NightwatchJS is used to drive the Selenium tests
+            - Built off of Gitlab's CI/CD functionality using multiple
+              Gitlab runners for testing and deployment
+            - Automated PHPUnit backend tests and Karma front end tests
+            - Nightwatch.js was used to create headless Chrome integration tests
         - description:
             Leading the graduation migration from legacy PHP code to PSR
             compatible code using Composer libraries
           notes:
             - Moving to PSR compatible code was done for better code
-              analysis, coverage, and code completion for quicker development
+              analysis, coverage, and code completion for quicker development.
+
         - description:
             Fully automated release process
           notes:
-            - Used Symfony based console commands to automate the creation
-              of release branches, and their associated merge requests
-              via Gitlab's API
-            - Upon successfully passing all tests and every thing is merged,
-              a release tag is automatically cut and pushed.
-            - Added Slack integration to alert developers to the progress
-              of the release process.
+            - Symfony based console commands are used to initiate new releases
+              via Jira, Gitlab, and Slack integrations.
+            - After initiating a release, all the developer has to do is
+              approve 2 merge requests and wait for the new release to be
+              baked and ready for deployment.
+            - Updates are then pushed live with a single click per customer
+              allowing greater flexibility strafing releases.
+
         - description:
-            Created and implemented roadmap to move the UI off of legacy
-            CSS towards using Bootstrap 4 for styling
+            Lead effort to reskin and improve the UI/UX and underlying
+            software architecture.
           notes:
-            - I did any necessary adjustments and modifications to Boostrap 4
-              to make it appear similar to the legacy styling.
-            - Switching to Bootstrap alleviated styling inconsistency issues
-              caused primarily from conflicting CSS rules in the old styling.
+            - Used Knockout, Bootstrap, and RequireJS on the front end to
+              effectively create an ad hoc Durandal
+            - Switching to Bootstrap alleviated styling inconsistency issues.
+              Bootstrap's excellent documentation also frequently answers the
+              question of "How should X look?" the majority of the time,
+              making development and reskinning much easier for developers.
+            - Twig templating was used on the backend to simplify and speed
+              development times.
+            - Previous architecture was using bare metal PHP templates with
+              a mix of jQuery and Prototype to handle more complex
+              UI requirements
+
         - description:
-            Added Bootstrap support to gradually move away from legacy libraries
+            Design and implementation of new DataTables based list views
           notes:
-            - Previously jQuery and Prototype were used to provide
-              interactive functionality.
+            - Complete rewrite of list based pages in the software to use
+              DataTables and server side JSON
+            - New view based data structures and rendering pipeline
+              architecture was developed to generate the JSON in a
+              flexible and consistent manner.
+            - This flexibility was expanded to also support PDF and CSV output
+              formats for report generation.
+
         - description:
-            Database clean up
+            Overhaul of PDF report and business document generation
           notes:
-            - Previously, no foreign key checks were used causing
-              database inconsistencies
-            - Refactored code that relied on invalid IDs to implement
-              tri-state logic
-            - Added foreign keys and tests to ensure database sanity
+            - Used Twig to generate HTML which is then fed through TCPDF
+              to generate business documents. Using this approach, we'll be
+              able to more easily migrate to another PDF generator
+              when it becomes necessary.
+            - Simplified and generic report pipeline was created to simplify
+              the layout and generation of all row based reports.
+
+        - description:
+            Database clean up with Doctrine ORM
+          notes:
+            - Used Doctrine migrations to progressively sync Doctrine's
+              expectations with the underlying schema.
+            - Removed or refactored code that relied on invalid IDs to
+              implement tri-state logic.
+
       duration:
-        start: "2017"
+        start: "2016"
         end:
 
     - name: "Intermedix"
@@ -196,9 +215,6 @@ experience:
             used by any industry.
         - description:
             Rewrote .NET and Microsoft based websites for use on LAMP servers.
-        - description:
-            Lead developer on a project to catalog and digitalize 300,000+
-            documents from a 19th century scholar.
       duration:
         start: "2007"
         end: "2015"

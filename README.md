@@ -19,4 +19,17 @@ here's some fun YouTube videos:
 
 ## Usage
 
-To be determind...
+Simply run `grunt` to build the latest resume PDF.
+
+## Development
+
+How I do it:
+
+* Run `grunt` once to get everything primed
+* `grunt watch` in one console
+* `grunt server:debug` in anoher
+* Chrome-based browser looking at http://localhost:8080 w/ dev tools open
+
+## Helpful Resources
+
+* [Generating PDF from HTML and Node.js and Puppeteer](https://blog.risingstack.com/pdf-from-html-node-js-puppeteer/)
