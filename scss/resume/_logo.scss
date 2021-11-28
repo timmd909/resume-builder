@@ -1,0 +1,25 @@
+// styling for the logo and its container
+
+#logo-container {
+  text-align: center;
+
+  #logo {
+    display: inline-block;
+    height: 20mm;
+    width: 20mm;
+  }
+
+  h1 {
+    font-size: 16pt;
+    line-height: 20pt;
+    letter-spacing: 0;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 10pt;
+    line-height: 12pt;
+    margin: 0;
+  }
+
+}

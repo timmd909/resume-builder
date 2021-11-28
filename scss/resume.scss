@@ -5,35 +5,18 @@
 // to have the highest level of similarity
 //
 
+// Basic overrides for the Timstrap/Bootstrap styling
 @import 'resume/variables';
 
-//
-// IMPORT TIMSTRAP/BOOTSTRAP
-//
 
-@import '../node_modules/timstrap/scss/timstrap/variables';
+// Include Timstrap (Bootstrap fork)
 @import '../node_modules/timstrap/scss/timstrap';
 
 //
-// RESUME SPECIFIC STYLES
+// Include the rest of the resume styles
 //
-html {
-  // height: 100%;
-  width: 100%;
-}
-
-@page {
-  margin: 1cm 1.5cm;
-}
-
-// handy utility to prevent line breaks in areas
-.nobreak {
-  page-break-inside: avoid;
-}
-
-a, a:link, a:active, a:visited {
-  text-decoration: none;
-}
+@import 'resume/page';
+@import 'resume/logo';
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Comfortaa, $font-family-sans-serif;
@@ -41,78 +24,15 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.5pt;
 }
 
-#logo-container {
-  @extend .mb-2;
-  @extend .text-center;
-
-  h1 {
-    @extend .mt-2;
-    @extend .mb-0;
-    font-size: 18pt;
-    line-height: 20pt;
-    letter-spacing: 0;
-  }
-
-  h2 {
-    @extend .m-0;
-    font-size: $font-size-base * 0.85;
-    font-size: 10pt;
-    line-height: 12pt;
-  }
-
-  #logo {
-    height: 128pt;
-    width: 128pt;
-  }
+.ugly-outline { // fer debuggin'
+  border: 1px solid #f0f;
 }
 
-#contact-info-container {
-  width: auto;
-  padding: 1rem 0;
-  margin: 0 auto;
-
-  .fa {
-    @extend .mr-1;
-  }
+.xp {
+  // nothing yet
 }
-
-
-#left-column {
-  .sidebar-list {
-    font-size: 85%;
-
-    .sidebar-list_container {
-      @extend .d-flex;
-      @extend .flex-column;
-      @extend .flex-wrap;
-    }
-
-    .sidebar-list_item {
-      @extend .d-flex;
-      @extend .align-items-center;
-
-      span {
-        @extend .d-flex;
-        @extend .flex-grow-1;
-      }
-      i {
-        @extend .mr-1;
-      }
-      .xp {
-        // nothing yet
-      }
-      .xp-1::before { content: "\f244" !important; color: lighten($brand-red, 10%); }
-      .xp-2::before { content: "\f243" !important; color: lighten($brand-green, 20%); }
-      .xp-3::before { content: "\f242" !important; color: lighten($brand-green, 10%); }
-      .xp-4::before { content: "\f241" !important; color: lighten($brand-green, 0%); }
-      .xp-5::before { content: "\f240" !important; color: darken($brand-green, 10%); }
-    }
-  }
-}
-
-#right-column {
-}
-
-
-@import 'resume/sections';
-@import 'resume/work-list';
+.xp-1::before { content: "\f244" !important; color: lighten($brand-red, 10%); }
+.xp-2::before { content: "\f243" !important; color: lighten($brand-green, 20%); }
+.xp-3::before { content: "\f242" !important; color: lighten($brand-green, 10%); }
+.xp-4::before { content: "\f241" !important; color: lighten($brand-green, 0%); }
+.xp-5::before { content: "\f240" !important; color: darken($brand-green, 10%); }

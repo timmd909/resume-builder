@@ -1,6 +1,9 @@
 $grid-gutter-width: 1rem;
-
 $font-size-base: 1rem !default;
 
-$margin-left-right: 4rem;
-$margin-top-bottom: 2rem;
+// $margin-left-right: 4rem;
+// $margin-top-bottom: 2rem;
+
+// Bootstrap's print styles break everything in PagedJS so let's not
+// include those.
+$enable-print-styles: false;

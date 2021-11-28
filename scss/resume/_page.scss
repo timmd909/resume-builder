@@ -1,0 +1,23 @@
+//
+// Keep all the page specific styles here
+//
+
+html {
+  font-size: 9pt;
+}
+
+@page {
+  margin: 1cm 1.5cm;
+  // font-size: 9pt;
+}
+
+// handy utility to prevent line breaks in areas
+.nobreak {
+  page-break-inside: avoid;
+}
+
+// Always hide the link decorations. It's distracting when previewing the
+// page in the browser.
+a, a:link, a:active, a:visited {
+  text-decoration: none;
+}
