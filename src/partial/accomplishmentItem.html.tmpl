@@ -1,0 +1,10 @@
+<li class="accomplishment_item">
+  {{ description }}
+  {{#if notes }}
+    <ul class="list-unstyled accomplishment_notes">
+      {{# notes }}
+        <li>{{ this }}</li>
+      {{/ notes }}
+    </li>
+  {{/if }}
+</li>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="comfortaa/latin.css">
+    <title>Tim Doerzbacher &mdash; {{ metadata.headline }} &mdash; R&eacute;sum&eacute;</title>
+  </head>
+  <body>
+
+    <!-- ================================================================== -->
+
+    <div id="left-column">
+
+      <section id="logo-container">
+        <img src="assets/logo.svg" id="logo">
+        <div>
+          <h1>{{ metadata.fullName }}</h1>
+          <h2>{{ metadata.headline }}</h2>
+        </div>
+      </section><!-- / #logo-container -->
+
+      <section id="contact-info">
+        {{> contactInfoItem icon='fa-phone' text=metadata.phone_number }}
+        {{> contactInfoItem icon='fa-envelope-o' text=metadata.email }}
+        {{> contactInfoItem icon='fa-link' text=metadata.website }}
+      </section><!-- / #contact-info -->
+
+      <section id="skills-section">
+        <h3>{{ skills.title }}</h3>
+        <ul class="list-unstyled">
+          {{# skills.entries }}
+            {{> sidebarListItem }}
+          {{/ skills.entries }}
+        </ul>
+      </section>
+
+      <section id="skills-section">
+        <h3>{{ operating_systems.title }}</h3>
+        <ul class="list-unstyled">
+          {{# operating_systems.entries }}
+            {{> sidebarListItem }}
+          {{/ operating_systems.entries }}
+        </ul>
+      </section>
+
+      <section id="skills-section">
+        <h3>{{ languages.title }}</h3>
+        <ul class="list-unstyled">
+          {{# languages.entries }}
+            {{> sidebarListItem }}
+          {{/ languages.entries }}
+        </ul>
+      </section>
+
+      <section id="tools-section">
+        <h3>{{ tools.title }}</h3>
+        <ul class="list-unstyled">
+          {{# tools.entries }}
+            {{> sidebarListItem }}
+          {{/ tools.entries }}
+        </ul>
+      </section>
+
+
+    </div><!-- / #left-column -->
+
+    <!-- ================================================================== -->
+
+    <div id="right-column">
+
+      <section id="accomplishments-section">
+        <h3>{{ accomplishments.title }}</h3>
+
+        <ul class="list-unstyled">
+          {{# accomplishments.entries }}
+            {{> accomplishmentItem }}
+          {{/ accomplishments.entries }}
+        </ul>
+      </section>
+
+      <section id="work-history-section">
+        <h3>Professional History</h3>
+
+        <ul class="list-unstyled">
+          {{# experience.entries }}
+            {{> workHistoryItem }}
+          {{/ experience.entries }}
+        </ul>
+      </section>
+
+    </div><!-- / #left-column -->
+
+    <!-- ================================================================== -->
+
+  </body>
+</html>

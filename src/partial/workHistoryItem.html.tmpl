@@ -1,0 +1,13 @@
+<li class="work-history_item">
+  <span class="work-history_title">{{ title }}</span>
+
+  <i class="fa fa-fw fa-at"></i>
+
+  <span class="work-history_company">{{ name }}</span>
+
+  <span class="work-history_duration">
+    {{ duration.start }} &ndash;
+    {{#if duration.end }}{{ duration.end }}{{ else }}Now{{/if}}
+  </span>
+
+</li>
