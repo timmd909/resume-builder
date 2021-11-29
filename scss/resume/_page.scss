@@ -6,6 +6,14 @@ html {
   font-size: 9pt;
 }
 
+body {
+  // none of this stuff is really necessary but it makes it a lot easier
+  // to work with in the browser.
+  position: relative;
+  margin: 0 auto;
+  width: 8.5 * 25.4mm - 2 * 10mm;
+}
+
 @page {
   margin: 1cm 1.5cm;
   // font-size: 9pt;
@@ -20,4 +28,17 @@ html {
 // page in the browser.
 a, a:link, a:active, a:visited {
   text-decoration: none;
+}
+
+$left-column-width: 55mm;
+
+#left-column {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: $left-column-width;
+}
+
+#right-column {
+  padding-left: $left-column-width;
 }

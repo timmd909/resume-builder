@@ -1,0 +1,23 @@
+// Styles for the sidebar sections (skills, OSs, etc)
+
+#contact-info {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar-section {
+  h3 {
+    font-size: 11pt;
+  }
+
+  .sidebar-section_list {
+    @extend .list-unstyled;
+  }
+}
+
+#tools-section {
+  .sidebar-section_list {
+    border: 1px solid red;
+    max-height: 50mm;
+  }
+}

@@ -1,0 +1,10 @@
+#accomplishments-section {
+  ul {
+    @extend .list-unstyled;
+
+    ul {
+      color: $gray-600;
+      font-size: 90%;
+    }
+  }
+}

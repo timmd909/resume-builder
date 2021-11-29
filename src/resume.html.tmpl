@@ -22,42 +22,42 @@
         </div>
       </section><!-- / #logo-container -->
 
-      <section id="contact-info">
+      <section id="contact-info" class="sidebar-section">
         {{> contactInfoItem icon='fa-phone' text=metadata.phone_number }}
         {{> contactInfoItem icon='fa-envelope-o' text=metadata.email }}
         {{> contactInfoItem icon='fa-link' text=metadata.website }}
       </section><!-- / #contact-info -->
 
-      <section id="skills-section">
+      <section id="skills-section" class="sidebar-section">
         <h3>{{ skills.title }}</h3>
-        <ul class="list-unstyled">
+        <ul class="sidebar-section_list">
           {{# skills.entries }}
             {{> sidebarListItem }}
           {{/ skills.entries }}
         </ul>
       </section>
 
-      <section id="skills-section">
+      <section id="operating-systems-section" class="sidebar-section">
         <h3>{{ operating_systems.title }}</h3>
-        <ul class="list-unstyled">
+        <ul class="sidebar-section_list">
           {{# operating_systems.entries }}
             {{> sidebarListItem }}
           {{/ operating_systems.entries }}
         </ul>
       </section>
 
-      <section id="skills-section">
+      <section id="languages-section" class="sidebar-section">
         <h3>{{ languages.title }}</h3>
-        <ul class="list-unstyled">
+        <ul class="sidebar-section_list">
           {{# languages.entries }}
             {{> sidebarListItem }}
           {{/ languages.entries }}
         </ul>
       </section>
 
-      <section id="tools-section">
+      <section id="tools-section" class="sidebar-section">
         <h3>{{ tools.title }}</h3>
-        <ul class="list-unstyled">
+        <ul class="sidebar-section_list">
           {{# tools.entries }}
             {{> sidebarListItem }}
           {{/ tools.entries }}
@@ -74,7 +74,7 @@
       <section id="accomplishments-section">
         <h3>{{ accomplishments.title }}</h3>
 
-        <ul class="list-unstyled">
+        <ul>
           {{# accomplishments.entries }}
             {{> accomplishmentItem }}
           {{/ accomplishments.entries }}

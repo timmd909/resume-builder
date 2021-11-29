@@ -17,7 +17,13 @@
 //
 @import 'resume/page';
 @import 'resume/logo';
+@import 'resume/xp';
+@import 'resume/accomplishments';
+@import 'resume/sidebar';
 
+//
+// Miscellaneous stuff that I don't know where to put...
+//
 h1, h2, h3, h4, h5, h6 {
   font-family: Comfortaa, $font-family-sans-serif;
   font-weight: bold;
@@ -27,12 +33,3 @@ h1, h2, h3, h4, h5, h6 {
 .ugly-outline { // fer debuggin'
   border: 1px solid #f0f;
 }
-
-.xp {
-  // nothing yet
-}
-.xp-1::before { content: "\f244" !important; color: lighten($brand-red, 10%); }
-.xp-2::before { content: "\f243" !important; color: lighten($brand-green, 20%); }
-.xp-3::before { content: "\f242" !important; color: lighten($brand-green, 10%); }
-.xp-4::before { content: "\f241" !important; color: lighten($brand-green, 0%); }
-.xp-5::before { content: "\f240" !important; color: darken($brand-green, 10%); }

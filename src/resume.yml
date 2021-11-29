@@ -30,38 +30,29 @@ languages:
 tools:
   title: "Technologies"
   entries:
-    - { name: "Angular"             , level: 2 }
-    - { name: "Ansible"             , level: 3 }
+    - { name: "Ansible"             , level: 4 }
     - { name: "Apache"              , level: 4 }
     - { name: "Bootstrap"           , level: 5 }
     - { name: "CodeIgniter"         , level: 4 }
     - { name: "DataTables"          , level: 5 }
     - { name: "Durandal"            , level: 5 }
-    - { name: "ejabberd"            , level: 3 }
     - { name: "FreeCAD"             , level: 4 }
     - { name: "Git"                 , level: 5 }
-    - { name: "Grep"                , level: 5 }
-    - { name: "Grunt"               , level: 5 }
-    - { name: "Jenkins"             , level: 4 }
     - { name: "Jira"                , level: 4 }
     - { name: "jQuery"              , level: 5 }
     - { name: "Knockout"            , level: 5 }
     - { name: "MariaDB"             , level: 5 }
     - { name: "MySQL"               , level: 5 }
-    - { name: "Nagios"              , level: 3 }
     - { name: "Nightwatch.js"       , level: 4 }
     - { name: "NodeJS"              , level: 4 }
     - { name: "PHPUnit"             , level: 4 }
     - { name: "PostgreSQL"          , level: 3 }
-    - { name: "Python"              , level: 2 }
     - { name: "QUnit"               , level: 5 }
-    - { name: "Rasbian"             , level: 5 }
+    - { name: "Raspberry Pi"        , level: 5 }
     - { name: "React"               , level: 3 }
     - { name: "RequireJS"           , level: 5 }
-    - { name: "Selenium"            , level: 4 }
-    - { name: "Subversion"          , level: 5 }
+    - { name: "Subversion"          , level: 3 }
     - { name: "Symfony2"            , level: 4 }
-    - { name: "Thrift"              , level: 3 }
     - { name: "Ubuntu"              , level: 5 }
     - { name: "WebDriver"           , level: 4 }
     - { name: "WordPress"           , level: 3 }
@@ -89,14 +80,35 @@ accomplishments:
   title: 'Noteworthy Accomplishments'
   entries:
     - description:
-        foo bar baz
+        Creation of continuous integration and deployment pipelines in Gitlab
+      notes:
+        - Releasing and testing code is my lease favor activity, and thus I
+          always enjoy fully automating that work.
+        - A single console command would kick off the release and require
+          no further input. All version numbers, branches, merge requests,
+          and Jira ticket(s) are automatically created.
 
     - description:
-        baaaaaar baaaaazles
+        Overseeing migration and rewriting of legacy CodeIgniter code to a
+        more modern Symfony based project
       notes:
-        - something else goes here
-        - maybe for subtext
+        - Getting them to play together nicely before completely cutting
+          out CodeIgniter was a fun problem. All the controllers and routing
+          remained in CI, while large swathes were hollowed out and replaced
+          with calls to PSR code.
 
+    - description:
+        Reimplemented legacy Tablesaw based list views using DataTables for
+        increased speed and functionality.
+
+    - description:
+        Reimplemented PDF generation by switching to PagedJS from a buggy and
+        limited TCPDF fork.
+      notes:
+        - This process was made much easier by first updating PDF generation
+          in TCPDF to use Twig templates to generate HTML/CSS that TCPDF
+          would then render. This drastically simplified the final switch to
+          PagedJS, while allowing us to work faster in the mean time.
 
   # - description:
   #     Created continuous integration environment to ensure build quality
