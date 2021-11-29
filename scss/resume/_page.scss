@@ -1,0 +1,54 @@
+//
+// Keep all the page specific styles here
+//
+
+html {
+  font-size: 9pt;
+  height: 100%;
+}
+
+body {
+  // none of this stuff is really necessary but it makes it a lot easier
+  // to work with in the browser.
+  position: relative;
+  margin: 0 auto;
+  width: 8.5 * 25.4mm - 2 * 10mm;
+  height: 100%;
+}
+
+@page {
+  margin: 1cm 1.5cm;
+  font-size: 9pt;
+
+  @bottom-left {
+    vertical-align: top;
+    font-size: 8pt;
+    color: $gray-600;
+  }
+}
+
+// handy utility to prevent line breaks in areas
+.nobreak {
+  page-break-inside: avoid;
+}
+
+// Always hide the link decorations. It's distracting when previewing the
+// page in the browser.
+a, a:link, a:active, a:visited {
+  text-decoration: none;
+}
+
+
+#left-column {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: $left-column-width + ($column-gutter-width / 2);
+  padding-right: ($column-gutter-width / 2);
+  height: 100%;
+}
+
+#right-column {
+  padding-left: $left-column-width + $column-gutter-width;
+  height: 100%;
+}

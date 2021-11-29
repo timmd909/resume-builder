@@ -2,8 +2,10 @@
 # I did this as cheap obfuscation method to make scrapping just a little
 # bit more difficult.
 metadata:
+  fullName: 'Tim Doerzbacher'
   phone_number: '¥412¥•¥758¥•¥0179¥'
   email: '¥tim¥@¥t¥im¥-¥doerz¥bacher¥.¥c¥om¥'
+  website: https://tim-doerzbacher.com
   headline: 'Software Engineer'
   github: https://github.com/timmd909/
   intro_points:
@@ -28,38 +30,30 @@ languages:
 tools:
   title: "Technologies"
   entries:
-    - { name: "Angular"             , level: 2 }
-    - { name: "Ansible"             , level: 3 }
+    - { name: "Ansible"             , level: 4 }
     - { name: "Apache"              , level: 4 }
     - { name: "Bootstrap"           , level: 5 }
     - { name: "CodeIgniter"         , level: 4 }
     - { name: "DataTables"          , level: 5 }
     - { name: "Durandal"            , level: 5 }
-    - { name: "ejabberd"            , level: 3 }
     - { name: "FreeCAD"             , level: 4 }
     - { name: "Git"                 , level: 5 }
-    - { name: "Grep"                , level: 5 }
-    - { name: "Grunt"               , level: 5 }
-    - { name: "Jenkins"             , level: 4 }
     - { name: "Jira"                , level: 4 }
     - { name: "jQuery"              , level: 5 }
     - { name: "Knockout"            , level: 5 }
     - { name: "MariaDB"             , level: 5 }
     - { name: "MySQL"               , level: 5 }
-    - { name: "Nagios"              , level: 3 }
     - { name: "Nightwatch.js"       , level: 4 }
     - { name: "NodeJS"              , level: 4 }
+    - { name: "PagedJS"             , level: 5 }
     - { name: "PHPUnit"             , level: 4 }
     - { name: "PostgreSQL"          , level: 3 }
-    - { name: "Python"              , level: 2 }
     - { name: "QUnit"               , level: 5 }
-    - { name: "Rasbian"             , level: 5 }
+    - { name: "Raspberry Pi"        , level: 5 }
     - { name: "React"               , level: 3 }
     - { name: "RequireJS"           , level: 5 }
-    - { name: "Selenium"            , level: 4 }
-    - { name: "Subversion"          , level: 5 }
-    - { name: "Symfony2"            , level: 4 }
-    - { name: "Thrift"              , level: 3 }
+    - { name: "Subversion"          , level: 3 }
+    - { name: "Symfony"             , level: 4 }
     - { name: "Ubuntu"              , level: 5 }
     - { name: "WebDriver"           , level: 4 }
     - { name: "WordPress"           , level: 3 }
@@ -68,13 +62,10 @@ skills:
   title: "Skills"
   entries:
     - { name: "Agile Development"        , level: 5 }
-    - { name: "Hobbyist Roboticist"      , level: 3 }
-    - { name: "Database Design"          , level: 4 }
-    - { name: "Graphic Design"           , level: 3 }
     - { name: "LAMP Environments"        , level: 5 }
     - { name: "Linux Administration"     , level: 4 }
-    - { name: "/Regular Expressions/"    , level: 5 }
-    - { name: "Website Design"           , level: 4 }
+    - { name: "Database Design"          , level: 4 }
+    - { name: "Graphic Design"           , level: 3 }
 
 operating_systems:
   title: "Operating Systems"
@@ -83,217 +74,151 @@ operating_systems:
     - { name: "Mac OS X" , level: 4 }
     - { name: "Windows"  , level: 1 }
 
+accomplishments:
+  title: 'Noteworthy Accomplishments'
+  entries:
+    - description:
+        I always clean up code bases and enjoy writing comments
+      notes:
+        There is no such thing as "self documenting" code.
+
+    - description:
+        Creation of continuous integration and deployment pipelines in Gitlab
+      notes:
+        Reduced the release process from several hours to about 30 minutes.
+        A single console command kicks off the release and requires no
+        further input. All version numbers, branches, merge requests, and
+        Jira tickets are automatically created.
+
+    - description:
+        Overseeing migration and rewriting of legacy CodeIgniter code to a
+        more modern Symfony/Laravel based project
+      notes:
+        All the controllers and routing remained in CI, while large swathes
+        were hollowed out and replaced with calls to PSR-based code using
+        composer libraries.
+
+    - description:
+        Replaced legacy Tablesaw based list views with DataTables
+      notes:
+        Event list views were previously hard coded into the application.
+        The new architecture allowed users to configure everything. I later
+        added custom in-place editors for most table cells to allow users
+        to quickly edit rows without needing to open the event editor.
+
+    - description:
+        Created new flexible and user customizable view-based rendering
+        pipeline for easily filtering and transforming data into
+        various formats
+      notes:
+        The new rendering pipeline now supports output in JSON, CSV, and PDF.
+        This allows the same codepath to handle feeding data to the
+        DataTables based event list, and the report generators.
+
+    - description:
+        Created new user customizable report functionality for events
+      notes:
+        The previously implemented version was more limited, and user saved
+        reports couldn't be edited. They could only be deleted and created
+        anew from scratch. The new version would allow editing, rearranging
+        columns, and more on any user saved report.
+
+    - description:
+        Completely reimplemented PDF generation to overcome existing
+        limitations and to allow customers more flexibility in the layout of
+        their documents
+      notes:
+        This was to remove an abandoned project (TCPDF) that had caused
+        innumerable problems. Now all clients have near unlimited control
+        of page layout and branding.
+
+    - description:
+        Created new release process to automatically generate and distribute
+        assets in various package formats (NuGet, WebJAR, etc.)
+      notes:
+        My team provided a shared UI toolkit internally for multiple teams,
+        all using different technologies. Automating the release into formats
+        suitable for myriad development environments saved all of us time
+        and effort.
+
+    - description:
+        Implemented visual regression systems for both Opus One Interactive
+        and Intermedix
+
+    - description:
+        Lead the project to divaricate a large, monolithic toolkit into
+        independent projects
+      notes:
+        This was to mitigate frequent regressions and compatibility
+        issues with downstream teams.
+
+    - description:
+        Created an application to collect employment applications along
+        with signatures
+      notes:
+        This was Flash based and way before it was cool to digitally
+        sign documents.
+
+    - description:
+        Created a syncing algorithm for a custom instant messaging app
+        that respected user privacy
+      notes:
+        I developed an algorithm for contact information that would normalize
+        and hash all contact information in a user's address book. This
+        was used to match new friends as people signed up for the app.
+
+    - description:
+        Designed and implemented a new product that would allow multiple
+        DVRs to archive and sync video data between nodes.
+      notes:
+        The system was designed to have a large array of disks to store all the
+        data in a central location. It was then indexed to allow quickly
+        searching, sharing, and restoring to any DVR.
+
+    - description:
+        Created a customer service and inventory management software
+      notes:
+        This software was designed to prevent unauthorized copies
+        of the ETC system while allowing sales and support to upsell
+        new features.
+
+    - description:
+        Design a new video packaging format to allow exchange of data
+        between DVRs
+      notes:
+        We needed a way to store up a dozen or more video streams along
+        with other event data and other metadata. This would then allow
+        easy backups and transferring of recording sessions between DVRs.
+
 experience:
   title: "Work History"
   entries:
     - name: Opus One Interactive
-      description: Senior Software Engineer
-      responsibilities:
-        - description:
-            Created continuous integration environment to ensure build quality
-          notes:
-            - Built off of Gitlab's CI/CD functionality using multiple
-              Gitlab runners for testing and deployment
-            - Automated PHPUnit backend tests and Karma front end tests
-            - Nightwatch.js was used to create headless Chrome integration tests
-        - description:
-            Leading the graduation migration from legacy PHP code to PSR
-            compatible code using Composer libraries
-          notes:
-            - Moving to PSR compatible code was done for better code
-              analysis, coverage, and code completion for quicker development.
-
-        - description:
-            Fully automated release process
-          notes:
-            - Symfony based console commands are used to initiate new releases
-              via Jira, Gitlab, and Slack integrations.
-            - After initiating a release, all the developer has to do is
-              approve 2 merge requests and wait for the new release to be
-              baked and ready for deployment.
-            - Updates are then pushed live with a single click per customer
-              allowing greater flexibility strafing releases.
-
-        - description:
-            Lead effort to reskin and improve the UI/UX and underlying
-            software architecture.
-          notes:
-            - Used Knockout, Bootstrap, and RequireJS on the front end to
-              effectively create an ad hoc Durandal
-            - Switching to Bootstrap alleviated styling inconsistency issues.
-              Bootstrap's excellent documentation also frequently answers the
-              question of "How should X look?" the majority of the time,
-              making development and reskinning much easier for developers.
-            - Twig templating was used on the backend to simplify and speed
-              development times.
-            - Previous architecture was using bare metal PHP templates with
-              a mix of jQuery and Prototype to handle more complex
-              UI requirements
-
-        - description:
-            Design and implementation of new DataTables based list views
-          notes:
-            - Complete rewrite of list based pages in the software to use
-              DataTables and server side JSON
-            - New view based data structures and rendering pipeline
-              architecture was developed to generate the JSON in a
-              flexible and consistent manner.
-            - This flexibility was expanded to also support PDF and CSV output
-              formats for report generation.
-
-        - description:
-            Overhaul of PDF report and business document generation
-          notes:
-            - Used Twig to generate HTML which is then fed through TCPDF
-              to generate business documents. Using this approach, we'll be
-              able to more easily migrate to another PDF generator
-              when it becomes necessary.
-            - Simplified and generic report pipeline was created to simplify
-              the layout and generation of all row based reports.
-
-        - description:
-            Database clean up with Doctrine ORM
-          notes:
-            - Used Doctrine migrations to progressively sync Doctrine's
-              expectations with the underlying schema.
-            - Removed or refactored code that relied on invalid IDs to
-              implement tri-state logic.
-
+      title: Senior Software Engineer
       duration:
         start: "2016"
         end:
 
     - name: "Intermedix"
-      description: "Front End Engineer / Release Engineer"
-      responsibilities:
-        - description:
-            Redesigned and implemented new release engineering process.
-          notes:
-            - Fully automated publishing of release assets.
-            - Automated release emails by using ChangeLog.
-            - Organized and developed a branching strategy for release and development.
-            - Redesigned the Grunt project files into a modular structure
-              and more easy to maintain structure.
-            - Integrated Stash with Jenkins to enforce testing before merging.
-            - Created automatic release process that is triggered by
-              new commits or merges to the master branch.
-            - Built and maintain Jenkins build slave.
-            - Added additional linting rules and code to enforce consistency
-              in the code.
-        - description:
-            Oversaw development of new major release of our product.
-          notes:
-            - The original architecture was of a large, monolithic package which
-              was prone to regressions.
-            - Chopped the package in many smaller, more focused packages to
-              allow downstream implementers more flexibility with upgrading and
-              feature sets.
-        - description:
-            Designed and implemented visual regression tests to improve
-            continuous integration.
-          notes:
-            - The testing framework is shared, making any updates or the testing
-              framework to be affected immediately in all existing and new modules
-            - All demos in the documentation are automatically checked
-              for visual regressions.
-        - description:
-            Evaluating and integrating additional third party libraries
-            in the shared toolkit.
-          notes:
-            - Automated patching and tweaking (when necessary) so that
-              all libraries can be used seamlessly with RequireJS.
+      title: "Front End Engineer / Release Engineer"
       duration:
         start: "2014"
         end: "2016"
 
     - name: "PiCon Web Design & Marketing"
-      description: "Subcontractor"
-      responsibilities:
-        - description:
-            Developed a web-based commercial employment application designed
-            for the trucking industry, yet generalized enough to be
-            used by any industry.
-        - description:
-            Rewrote .NET and Microsoft based websites for use on LAMP servers.
+      title: "Subcontractor"
       duration:
         start: "2007"
         end: "2015"
 
     - name: "Walking Thumbs"
-      description: "Full Stack Developer"
-      responsibilities:
-        - description:
-            Integrating PHP and ejabberd based nodes and their respective
-            database nodes into a custom XMPP-based messaging system.
-          notes:
-            - Apache Thrift was used to enable direct communication between
-              the PHP and ejabberd nodes.
-            - ejabbard calls originally queried the database through
-              Thrift calls to PHP. Rewrote to have the ejabberd nodes
-              directly query the PostgreSQL cluster when possible.
-        - description:
-            Created syncing algorithm for finding other users on the system.
-          notes:
-            - Hashing was used for matches instead of unencrypted
-              contact information.
-            - This was done to protect privacy concerns while still being
-              able to match other users.
-            - Normalized email and phone numbers to prevent false positives
-              and maximize matches. This was extremely important since all
-              contacts were stored only as hashes.
-        - description:
-            Improved and expanded automated testing suite;
-            increased the code coverage and reduced the execution time.
-        - description:
-            Handled all server related tasks to support other developers
-            working on the Android and iOS clients.
-          notes:
-            - Set up Nagios on an AWS instance.
-            - Installed, configured, and upgrading of servers.
-        - description:
-            Built automated server build scripts for use by the rest of
-            the team, decreasing the server-side ramp up time for new
-            app developers.
-        - description:
-            Handled overseeing implementing company websites.
+      title: "Full Stack Developer"
       duration:
         start: "2013"
         end: "2014"
 
     - name: "Kb Port"
-      description: "Server & Web Developer"
-      responsibilities:
-        - description:
-            Handled UI design and implemention on several major software revisions.
-          notes:
-            - Utilized HTML5/CSS3 for maximum compatibility in the future.
-            - Previous versions were hacked to work on Internet Explorer
-              with a proprietary Active X control.
-        - description:
-            Developed RAID-based archival system for compiling video sessions from
-            network connected video recording products.
-          notes:
-            - System has up to 14TB of storage allowing hundreds of days
-              of recording video to be quickly searched, indexed, and shared.
-            - Automated backups to the archival unit eases consolation of
-              student videos and prevents the video records from filling up.
-        - description:
-            Developed customized customer management and inventory management software.
-          notes:
-            - Features included allowing automated upgrades to systems out
-              in the field to facilitate up-selling new products and features.
-            - The system interfaced with copy protection code on the systems
-              to prevent unauthorized cloning.
-        - description:
-            Designed a new video package format to allow exchange of data
-            between the company's various products.
-          notes:
-            - Designed to be easily extendable at future times to allow
-              any type of metadata or otherwise to be added without
-              breaking backwards compatibility.
-            - Utilized OSS tools for maximum inter-compatibility
-              on different platforms.
-
+      title: "Server & Web Developer"
       duration:
         start: "2008"
         end: "2013"

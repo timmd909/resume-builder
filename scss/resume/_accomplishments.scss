@@ -1,0 +1,18 @@
+#accomplishments-section {
+  .accomplishments-list {
+    @extend .list-unstyled;
+  }
+
+  .accomplishments-list_item {
+    margin-bottom: 0.25rem;
+    line-height: 1.2rem;
+  }
+
+  .accomplishments-list_notes {
+    // @extend .text-muted;
+    margin: 0.25rem 0;
+    color: $gray-700;
+    font-size: 8pt;
+    line-height: 1.2rem;
+  }
+}

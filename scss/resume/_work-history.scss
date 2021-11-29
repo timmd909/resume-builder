@@ -1,0 +1,21 @@
+// For styling the roughly half dozen places I've worked at
+
+#work-history-section {
+  margin-top: 1rem;
+
+  .work-history_item {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+
+  }
+
+  .work-history_company {
+    flex-grow: 1;
+  }
+
+  .work-history_duration {
+    width: 20mm;
+  }
+}

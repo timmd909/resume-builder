@@ -1,0 +1,11 @@
+// this for styling to show what my level of experience w/ a
+// particular subject. For now, that means displaying batteries.
+
+.xp {
+  // nothing yet
+}
+.xp-1::before { content: "\f244" !important; color: lighten($brand-red, 10%); }
+.xp-2::before { content: "\f243" !important; color: lighten($brand-green, 20%); }
+.xp-3::before { content: "\f242" !important; color: lighten($brand-green, 10%); }
+.xp-4::before { content: "\f241" !important; color: lighten($brand-green, 0%); }
+.xp-5::before { content: "\f240" !important; color: darken($brand-green, 10%); }
