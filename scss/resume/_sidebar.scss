@@ -1,13 +1,17 @@
 // Styles for the sidebar sections (skills, OSs, etc)
 
 #contact-info {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
+
+  .fa {
+    color: $brand-green;
+  }
 }
 
 .sidebar-section {
   h3 {
     font-size: 11pt;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
   }
 
   .sidebar-section_list {
@@ -27,6 +31,6 @@
     @extend .flex-wrap;
 
     // this will need updated unfortunately
-    max-height: 66mm;
+    max-height: 70mm;
   }
 }

@@ -5,11 +5,12 @@
 
   .accomplishments-list_item {
     margin-bottom: 0.25rem;
+    line-height: 1.2rem;
   }
 
   .accomplishments-list_notes {
     // @extend .text-muted;
-    // padding-left: 0.5rem;
+    margin: 0.25rem 0;
     color: $gray-700;
     font-size: 8pt;
     line-height: 1.2rem;

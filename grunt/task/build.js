@@ -30,7 +30,7 @@ module.exports = function (grunt) {
       var context = yaml.load(fs.readFileSync('src/resume.yml', 'utf8'));
       // next, let's add the git revision, but I only care about the first
       // 12 characters.
-      context.head = execSync('git rev-parse HEAD', {'encoding': 'utf8'}).trim().substr(0, 12);
+      context.head = execSync('git rev-parse HEAD', {'encoding': 'utf8'}).trim().substr(0, 12).toUpperCase();
       // creation date also seems like a useful thing
       var now = new Date();
       context.created = now.toISOString().substr(0, 10);

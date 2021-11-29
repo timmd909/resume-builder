@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="comfortaa/latin.css">
     <title>Tim Doerzbacher &mdash; {{ metadata.headline }} &mdash; R&eacute;sum&eacute;</title>
+    <style>
+      @page {
+        @bottom-left {
+          content: 'Created {{ created }} from {{ head }}';
+        }
+      }
+    </style>
   </head>
   <body>
 
@@ -18,7 +25,7 @@
         <img src="assets/logo.svg" id="logo">
         <div>
           <h1>{{ metadata.fullName }}</h1>
-          <h2>{{ metadata.headline }}</h2>
+          <h2 class="text-brand-green">{{ metadata.headline }}</h2>
         </div>
       </section><!-- / #logo-container -->
 
@@ -71,7 +78,7 @@
 
     <div id="right-column">
 
-      <section id="accomplishments-section">
+      <section id="accomplishments-section" class="nobreak">
         <h3>{{ accomplishments.title }}</h3>
 
         <ul class="accomplishments-list">
@@ -81,7 +88,7 @@
         </ul>
       </section>
 
-      <section id="work-history-section">
+      <section id="work-history-section" class="nobreak">
         <h3>Professional History</h3>
 
         <ul class="list-unstyled">
