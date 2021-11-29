@@ -7,7 +7,7 @@
 
 // Basic overrides for the Timstrap/Bootstrap styling
 @import 'resume/variables';
-
+@import 'resume/mixins';
 
 // Include Timstrap (Bootstrap fork)
 @import '../node_modules/timstrap/scss/timstrap';

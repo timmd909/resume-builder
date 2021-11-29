@@ -7,13 +7,6 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="comfortaa/latin.css">
     <title>Tim Doerzbacher &mdash; {{ metadata.headline }} &mdash; R&eacute;sum&eacute;</title>
-    <style>
-      @page {
-        @bottom-left {
-          content: 'Created {{ created }} from {{ head }}';
-        }
-      }
-    </style>
   </head>
   <body>
 
@@ -25,14 +18,14 @@
         <img src="assets/logo.svg" id="logo">
         <div>
           <h1>{{ metadata.fullName }}</h1>
-          <h2 class="text-brand-green">{{ metadata.headline }}</h2>
+          <h2>{{ metadata.headline }}</h2>
         </div>
       </section><!-- / #logo-container -->
 
       <section id="contact-info" class="sidebar-section">
-        {{> contactInfoItem icon='fa-phone' text=metadata.phone_number }}
-        {{> contactInfoItem icon='fa-envelope-o' text=metadata.email }}
-        {{> contactInfoItem icon='fa-link' text=metadata.website }}
+        {{> contactInfoItem icon='fa-phone'      type="tel:1-"   text=metadata.phone_number }}
+        {{> contactInfoItem icon='fa-envelope-o' type="mailto:"  text=metadata.email }}
+        {{> contactInfoItem icon='fa-link'       type="https://" text=metadata.website }}
       </section><!-- / #contact-info -->
 
       <section id="skills-section" class="sidebar-section">
@@ -91,7 +84,7 @@
       <section id="work-history-section" class="nobreak">
         <h3>Professional History</h3>
 
-        <ul class="list-unstyled">
+        <ul class="work-history_list">
           {{# experience.entries }}
             {{> workHistoryItem }}
           {{/ experience.entries }}
@@ -99,6 +92,18 @@
       </section>
 
     </div><!-- / #left-column -->
+
+    <!-- ================================================================== -->
+
+    <div id="footer-bottom-left">
+      Created {{ created }} from hash
+      <a href="https://github.com/timmd909/resume-builder/commits/{{ head }}">{{ shortenHash head }}</a>
+    </div>
+
+    <div id="footer-bottom-right">
+      Want a resume like this? Fork it at
+      <a href="https://github.com/timmd909/resume-builder/">github.com/timmd909/resume-builder</a>
+    </div>
 
     <!-- ================================================================== -->
 

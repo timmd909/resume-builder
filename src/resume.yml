@@ -3,7 +3,7 @@
 # bit more difficult.
 metadata:
   fullName: 'Tim Doerzbacher'
-  phone_number: '¥412¥•¥758¥•¥0179¥'
+  phone_number: '¥412¥-¥758¥-¥0179¥'
   email: '¥tim¥@¥t¥im¥-¥doerz¥bacher¥.¥c¥om¥'
   website: https://tim-doerzbacher.com
   headline: 'Software Engineer'
@@ -22,7 +22,6 @@ languages:
     - { name: "JavaScript"  , level: 5 }
     - { name: "LESS"        , level: 4 }
     - { name: "PHP"         , level: 5 }
-    - { name: "Python"      , level: 2 }
     - { name: "SASS/SCSS"   , level: 4 }
     - { name: "SQL"         , level: 4 }
     - { name: "Yaml"        , level: 5 }
@@ -38,6 +37,7 @@ tools:
     - { name: "Durandal"            , level: 5 }
     - { name: "FreeCAD"             , level: 4 }
     - { name: "Git"                 , level: 5 }
+    - { name: "Gitlab"              , level: 5 }
     - { name: "Jira"                , level: 4 }
     - { name: "jQuery"              , level: 5 }
     - { name: "Knockout"            , level: 5 }
@@ -52,7 +52,6 @@ tools:
     - { name: "Raspberry Pi"        , level: 5 }
     - { name: "React"               , level: 3 }
     - { name: "RequireJS"           , level: 5 }
-    - { name: "Subversion"          , level: 3 }
     - { name: "Symfony"             , level: 4 }
     - { name: "Ubuntu"              , level: 5 }
     - { name: "WebDriver"           , level: 4 }
@@ -78,28 +77,27 @@ accomplishments:
   title: 'Noteworthy Accomplishments'
   entries:
     - description:
-        I always clean up code bases and enjoy writing comments
+        I always clean up code bases and enjoy writing comments.
       notes:
         There is no such thing as "self documenting" code.
 
     - description:
-        Creation of continuous integration and deployment pipelines in Gitlab
+        Creation of continuous integration and deployment pipelines in Gitlab.
       notes:
-        Reduced the release process from several hours to about 30 minutes.
-        A single console command kicks off the release and requires no
-        further input. All version numbers, branches, merge requests, and
-        Jira tickets are automatically created.
+        Reduced the release process from several hours to about 5 seconds of
+        effort followed by 30 minutes of waiting. A single console command
+        kicked off the release and requires no further input.
 
     - description:
         Overseeing migration and rewriting of legacy CodeIgniter code to a
-        more modern Symfony/Laravel based project
+        more modern Symfony/Laravel based project.
       notes:
         All the controllers and routing remained in CI, while large swathes
         were hollowed out and replaced with calls to PSR-based code using
-        composer libraries.
+        Composer&nbsp;libraries.
 
     - description:
-        Replaced legacy Tablesaw based list views with DataTables
+        Replaced legacy Tablesaw based list views with DataTables.
       notes:
         Event list views were previously hard coded into the application.
         The new architecture allowed users to configure everything. I later
@@ -109,24 +107,22 @@ accomplishments:
     - description:
         Created new flexible and user customizable view-based rendering
         pipeline for easily filtering and transforming data into
-        various formats
+        various formats.
       notes:
         The new rendering pipeline now supports output in JSON, CSV, and PDF.
-        This allows the same codepath to handle feeding data to the
+        This allows the same code path to handle feeding data to the
         DataTables based event list, and the report generators.
 
     - description:
-        Created new user customizable report functionality for events
+        Created new user customizable report functionality for events.
       notes:
-        The previously implemented version was more limited, and user saved
-        reports couldn't be edited. They could only be deleted and created
-        anew from scratch. The new version would allow editing, rearranging
-        columns, and more on any user saved report.
+        Replaced hardcoded system-wide and limited user reports with a
+        visual report editor and a more flexible backend.
 
     - description:
-        Completely reimplemented PDF generation to overcome existing
+        Completely re-implemented PDF generation to overcome existing
         limitations and to allow customers more flexibility in the layout of
-        their documents
+        their documents.
       notes:
         This was to remove an abandoned project (TCPDF) that had caused
         innumerable problems. Now all clients have near unlimited control
@@ -134,7 +130,7 @@ accomplishments:
 
     - description:
         Created new release process to automatically generate and distribute
-        assets in various package formats (NuGet, WebJAR, etc.)
+        assets in various package formats (NuGet, WebJAR, etc.).
       notes:
         My team provided a shared UI toolkit internally for multiple teams,
         all using different technologies. Automating the release into formats
@@ -142,30 +138,33 @@ accomplishments:
         and effort.
 
     - description:
-        Implemented visual regression systems for both Opus One Interactive
-        and Intermedix
+        Implemented multiple visual regression systems.
+      notes:
+        The first visual regression system I setup was used to spot
+        hard crashes in toolkit demos. The second time was for prevention
+        of regressions in PDF generation.
 
     - description:
         Lead the project to divaricate a large, monolithic toolkit into
-        independent projects
+        independent projects.
       notes:
         This was to mitigate frequent regressions and compatibility
         issues with downstream teams.
 
     - description:
         Created an application to collect employment applications along
-        with signatures
+        with signatures.
       notes:
         This was Flash based and way before it was cool to digitally
         sign documents.
 
     - description:
-        Created a syncing algorithm for a custom instant messaging app
-        that respected user privacy
+        Created a privacy respecting user matching algorithm for a
+        messaging app.
       notes:
-        I developed an algorithm for contact information that would normalize
-        and hash all contact information in a user's address book. This
-        was used to match new friends as people signed up for the app.
+        The algorithm that I developed would normalize and hash
+        contact information in a user's address book. This hashed data
+        was then used to match new friends.
 
     - description:
         Designed and implemented a new product that would allow multiple
@@ -176,19 +175,19 @@ accomplishments:
         searching, sharing, and restoring to any DVR.
 
     - description:
-        Created a customer service and inventory management software
+        Created a customer service and inventory management software.
       notes:
         This software was designed to prevent unauthorized copies
         of the ETC system while allowing sales and support to upsell
-        new features.
+        new&nbsp;features.
 
     - description:
-        Design a new video packaging format to allow exchange of data
-        between DVRs
+        Designed a video packaging format to allow exchange of data
+        between&nbsp;DVRs.
       notes:
         We needed a way to store up a dozen or more video streams along
         with other event data and other metadata. This would then allow
-        easy backups and transferring of recording sessions between DVRs.
+        easy backups and transferring of recording sessions.
 
 experience:
   title: "Work History"
