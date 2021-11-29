@@ -1,23 +1,32 @@
 // Styles for the sidebar sections (skills, OSs, etc)
 
 #contact-info {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1.5rem 0;
 }
 
 .sidebar-section {
   h3 {
     font-size: 11pt;
+    margin: 1.5rem 0;
   }
 
   .sidebar-section_list {
     @extend .list-unstyled;
   }
+
+  i.fa-fw {
+    margin-right: 0.5rem;
+  }
 }
 
 #tools-section {
+  // hack the sidebar section to wrap into 2 columns
   .sidebar-section_list {
-    border: 1px solid red;
-    max-height: 50mm;
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .flex-wrap;
+
+    // this will need updated unfortunately
+    max-height: 66mm;
   }
 }

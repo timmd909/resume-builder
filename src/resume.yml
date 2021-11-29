@@ -61,13 +61,10 @@ skills:
   title: "Skills"
   entries:
     - { name: "Agile Development"        , level: 5 }
-    - { name: "Hobbyist Roboticist"      , level: 3 }
-    - { name: "Database Design"          , level: 4 }
-    - { name: "Graphic Design"           , level: 3 }
     - { name: "LAMP Environments"        , level: 5 }
     - { name: "Linux Administration"     , level: 4 }
-    - { name: "/Regular Expressions/"    , level: 5 }
-    - { name: "Website Design"           , level: 4 }
+    - { name: "Database Design"          , level: 4 }
+    - { name: "Graphic Design"           , level: 3 }
 
 operating_systems:
   title: "Operating Systems"
@@ -81,210 +78,137 @@ accomplishments:
   entries:
     - description:
         Creation of continuous integration and deployment pipelines in Gitlab
+        to help speed up Opus One Interactive releases
       notes:
-        - Releasing and testing code is my lease favor activity, and thus I
-          always enjoy fully automating that work.
-        - A single console command would kick off the release and require
-          no further input. All version numbers, branches, merge requests,
-          and Jira ticket(s) are automatically created.
+        The previous release process was a laborious manual process that
+        took most of the working day to complete. Full release automation
+        turned that into an hour long process, which was later refined to
+        approximately a half hour. A single console command kicks off the
+        release and require no further input. All version numbers, branches,
+        merge requests, and a Jira release ticket are all
+        automatically created.
 
     - description:
         Overseeing migration and rewriting of legacy CodeIgniter code to a
         more modern Symfony based project
       notes:
-        - Getting them to play together nicely before completely cutting
-          out CodeIgniter was a fun problem. All the controllers and routing
-          remained in CI, while large swathes were hollowed out and replaced
-          with calls to PSR code.
+        Getting them to play together nicely before completely cutting
+        out CodeIgniter was a fun problem. All the controllers and routing
+        remained in CI, while large swathes were hollowed out and replaced
+        with calls to PSR code. This also drastically increased our code
+        coverage which reduced the frequency and severity of bugs
+        rather quickly.
 
     - description:
         Reimplemented legacy Tablesaw based list views using DataTables for
-        increased speed and functionality.
+        increased speed and flexibility
+      notes:
+        Event list views were previously hard coded into the application and
+        thus not user configurable. The new architecture allowed user
+        configurable. I later added custom in-place editors for most table
+        cells to allow users to quickly edit rows without needing to open
+        the event editor.
 
     - description:
-        Reimplemented PDF generation by switching to PagedJS from a buggy and
-        limited TCPDF fork.
+        Created new flexible and user customizable view-based rendering
+        pipeline for easily filtering and transforming data into
+        various formats
       notes:
-        - This process was made much easier by first updating PDF generation
-          in TCPDF to use Twig templates to generate HTML/CSS that TCPDF
-          would then render. This drastically simplified the final switch to
-          PagedJS, while allowing us to work faster in the mean time.
+        The new rendering pipeline now supports output in JSON, CSV, and PDF.
+        This allows the same codepath to handle feeding data to the
+        DataTables based event list, and the report generators.
 
-  # - description:
-  #     Created continuous integration environment to ensure build quality
-  #   notes:
-  #     - Built off of Gitlab's CI/CD functionality using multiple
-  #       Gitlab runners for testing and deployment
-  #     - Automated PHPUnit backend tests and Karma front end tests
-  #     - Nightwatch.js was used to create headless Chrome integration tests
-  # - description:
-  #     Leading the graduation migration from legacy PHP code to PSR
-  #     compatible code using Composer libraries
-  #   notes:
-  #     - Moving to PSR compatible code was done for better code
-  #       analysis, coverage, and code completion for quicker development.
-  #
-  # - description:
-  #     Fully automated release process
-  #   notes:
-  #     - Symfony based console commands are used to initiate new releases
-  #       via Jira, Gitlab, and Slack integrations.
-  #     - After initiating a release, all the developer has to do is
-  #       approve 2 merge requests and wait for the new release to be
-  #       baked and ready for deployment.
-  #     - Updates are then pushed live with a single click per customer
-  #       allowing greater flexibility strafing releases.
-  #
-  # - description:
-  #     Lead effort to reskin and improve the UI/UX and underlying
-  #     software architecture.
-  #   notes:
-  #     - Used Knockout, Bootstrap, and RequireJS on the front end to
-  #       effectively create an ad hoc Durandal
-  #     - Switching to Bootstrap alleviated styling inconsistency issues.
-  #       Bootstrap's excellent documentation also frequently answers the
-  #       question of "How should X look?" the majority of the time,
-  #       making development and reskinning much easier for developers.
-  #     - Twig templating was used on the backend to simplify and speed
-  #       development times.
-  #     - Previous architecture was using bare metal PHP templates with
-  #       a mix of jQuery and Prototype to handle more complex
-  #       UI requirements
-  #
-  # - description:
-  #     Design and implementation of new DataTables based list views
-  #   notes:
-  #     - Complete rewrite of list based pages in the software to use
-  #       DataTables and server side JSON
-  #     - New view based data structures and rendering pipeline
-  #       architecture was developed to generate the JSON in a
-  #       flexible and consistent manner.
-  #     - This flexibility was expanded to also support PDF and CSV output
-  #       formats for report generation.
-  #
-  # - description:
-  #     Overhaul of PDF report and business document generation
-  #   notes:
-  #     - Used Twig to generate HTML which is then fed through TCPDF
-  #       to generate business documents. Using this approach, we'll be
-  #       able to more easily migrate to another PDF generator
-  #       when it becomes necessary.
-  #     - Simplified and generic report pipeline was created to simplify
-  #       the layout and generation of all row based reports.
-  #
-  # - description:
-  #     Database clean up with Doctrine ORM
-  #   notes:
-  #     - Used Doctrine migrations to progressively sync Doctrine's
-  #       expectations with the underlying schema.
-  #     - Removed or refactored code that relied on invalid IDs to
-  #       implement tri-state logic.
-  # - description:
-  #     Redesigned and implemented new release engineering process.
-  #   notes:
-  #     - Fully automated publishing of release assets.
-  #     - Automated release emails by using ChangeLog.
-  #     - Organized and developed a branching strategy for release and development.
-  #     - Redesigned the Grunt project files into a modular structure
-  #       and more easy to maintain structure.
-  #     - Integrated Stash with Jenkins to enforce testing before merging.
-  #     - Created automatic release process that is triggered by
-  #       new commits or merges to the master branch.
-  #     - Built and maintain Jenkins build slave.
-  #     - Added additional linting rules and code to enforce consistency
-  #       in the code.
-  # - description:
-  #     Oversaw development of new major release of our product.
-  #   notes:
-  #     - The original architecture was of a large, monolithic package which
-  #       was prone to regressions.
-  #     - Chopped the package in many smaller, more focused packages to
-  #       allow downstream implementers more flexibility with upgrading and
-  #       feature sets.
-  # - description:
-  #     Designed and implemented visual regression tests to improve
-  #     continuous integration.
-  #   notes:
-  #     - The testing framework is shared, making any updates or the testing
-  #       framework to be affected immediately in all existing and new modules
-  #     - All demos in the documentation are automatically checked
-  #       for visual regressions.
-  # - description:
-  #     Evaluating and integrating additional third party libraries
-  #     in the shared toolkit.
-  #   notes:
-  #     - Automated patching and tweaking (when necessary) so that
-  #       all libraries can be used seamlessly with RequireJS.
-  # - description:
-  #     Developed a web-based commercial employment application designed
-  #     for the trucking industry, yet generalized enough to be
-  #     used by any industry.
-  # - description:
-  #     Rewrote .NET and Microsoft based websites for use on LAMP servers.
-  # - description:
-  #     Integrating PHP and ejabberd based nodes and their respective
-  #     database nodes into a custom XMPP-based messaging system.
-  #   notes:
-  #     - Apache Thrift was used to enable direct communication between
-  #       the PHP and ejabberd nodes.
-  #     - ejabbard calls originally queried the database through
-  #       Thrift calls to PHP. Rewrote to have the ejabberd nodes
-  #       directly query the PostgreSQL cluster when possible.
-  # - description:
-  #     Created syncing algorithm for finding other users on the system.
-  #   notes:
-  #     - Hashing was used for matches instead of unencrypted
-  #       contact information.
-  #     - This was done to protect privacy concerns while still being
-  #       able to match other users.
-  #     - Normalized email and phone numbers to prevent false positives
-  #       and maximize matches. This was extremely important since all
-  #       contacts were stored only as hashes.
-  # - description:
-  #     Improved and expanded automated testing suite;
-  #     increased the code coverage and reduced the execution time.
-  # - description:
-  #     Handled all server related tasks to support other developers
-  #     working on the Android and iOS clients.
-  #   notes:
-  #     - Set up Nagios on an AWS instance.
-  #     - Installed, configured, and upgrading of servers.
-  # - description:
-  #     Built automated server build scripts for use by the rest of
-  #     the team, decreasing the server-side ramp up time for new
-  #     app developers.
-  # - description:
-  #     Handled overseeing implementing company websites.
-  # - description:
-  #     Handled UI design and implemention on several major software revisions.
-  #   notes:
-  #     - Utilized HTML5/CSS3 for maximum compatibility in the future.
-  #     - Previous versions were hacked to work on Internet Explorer
-  #       with a proprietary Active X control.
-  # - description:
-  #     Developed RAID-based archival system for compiling video sessions from
-  #     network connected video recording products.
-  #   notes:
-  #     - System has up to 14TB of storage allowing hundreds of days
-  #       of recording video to be quickly searched, indexed, and shared.
-  #     - Automated backups to the archival unit eases consolation of
-  #       student videos and prevents the video records from filling up.
-  # - description:
-  #     Developed customized customer management and inventory management software.
-  #   notes:
-  #     - Features included allowing automated upgrades to systems out
-  #       in the field to facilitate up-selling new products and features.
-  #     - The system interfaced with copy protection code on the systems
-  #       to prevent unauthorized cloning.
-  # - description:
-  #     Designed a new video package format to allow exchange of data
-  #     between the company's various products.
-  #   notes:
-  #     - Designed to be easily extendable at future times to allow
-  #       any type of metadata or otherwise to be added without
-  #       breaking backwards compatibility.
-  #     - Utilized OSS tools for maximum inter-compatibility
-  #       on different platforms.
+    - description:
+        Created new user customizable report functionality for events
+      notes:
+        This relies heavily upon the rendering pipeline I created. The
+        previously implemented version was more limited, and user saved
+        reports couldn't be edited. They could only be deleted and created
+        anew from scratch. The new version would allow editing, rearranging
+        columns, and other standard operations on any user saved report.
+
+    - description:
+        Completely reimplemented PDF generation to overcome existing
+        limitations and to allow customers more flexibility in the layout of
+        their documents
+      notes:
+        The old way of generating PDFs relied upon a years old fork
+        of an abandoned software project (TCPDF). Everything originally was
+        manually coded to output data at fixed locations, forcing all clients
+        to have nearly identical looking documents. Now all clients have near
+        unlimited control of page layout. The pages are generated by using
+        bespoke Twig templates to create an intermediary HTML document.
+        That is then fed to PagedJS to do the final rendering.
+
+    - description:
+        Created new release process to automatically generate and distribute
+        assets in various package formats (NuGet, WebJAR, etc.)
+      notes:
+        My team provided a shared UI toolkit internally for multiple teams,
+        all using different technologies. Automating the release into formats
+        suitable for myriad development environments saved all of us time
+        and effort.
+
+    - description:
+        Implemented visual regression systems for both Opus One Interactive
+        and Intermedix
+      notes:
+        At Intermedix, the visual regressions were automatically run against
+        the toolkit and demos to ensure that no breaking changes would cause
+        other teams grief. At Opus One Interactive, the visual regression tests
+        are used to prevent breaking changes in client contracts, itineraries,
+        and all other PDFs.
+
+    - description:
+        Lead the project to divericate a large monolithic toolkit into
+        approximately a dozen independent projects.
+      notes:
+        The original architecture caused frequent regressions and compatibility
+        issues with downstream teams. Chopping the toolkit into many smaller
+        packages avoided many headaches while allowing my team more flexibility
+        to improve.
+
+    - description:
+        Created an application to collect employment applications along
+        signatures for a trucking company.
+      notes:
+        This was Flash based and way before it was cool to digitally
+        sign documents.
+
+    - description:
+        Created a syncing algorithm for a custom instant messaging app
+        that respected user privacy
+      notes:
+        I developed an algorithm for contact information that would normalize
+        and hash all contact information in a user's address book. This
+        was then used to suggest new friends as people signed up for the app.
+
+    - description:
+        Designed and implemented a new product that would allow multiple
+        DVRs to Archive and sync video data between nodes.
+      notes:
+        The system was designed to have a large array of disks in RAID5 to
+        sync all the data to a central location. From there, it was indexed
+        to allow quickly searching, sharing, and restoring to any DVR.
+
+    - description:
+        Created a customer service and inventory management software for
+        supporting customers and preventing unauthorized copying
+      notes:
+        The main goal of this software was to prevent unauthorized copies
+        of the ETC system while allowing sales and support to upsell new
+        features. All the user had to do then was trigger and update, and
+        then any new features would become available.
+
+    - description:
+        Design a new video packaging format to allow exchange of data
+        between DVRs
+      notes:
+        The ETC was effectively a DVR on steroids. We needed a way to
+        store up a dozen or more video streams along with other event data and
+        other metadata. This would then allow easy backups and manually
+        transferring of recording sessions between DVRs. This would become
+        the format that the archiver product would use.
 
 experience:
   title: "Work History"

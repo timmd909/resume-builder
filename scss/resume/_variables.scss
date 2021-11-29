@@ -7,3 +7,6 @@ $font-size-base: 1rem !default;
 // Bootstrap's print styles break everything in PagedJS so let's not
 // include those.
 $enable-print-styles: false;
+
+$left-column-width: 55mm;
+$column-gutter-width: 5mm;

@@ -4,6 +4,7 @@
 
 html {
   font-size: 9pt;
+  height: 100%;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   position: relative;
   margin: 0 auto;
   width: 8.5 * 25.4mm - 2 * 10mm;
+  height: 100%;
 }
 
 @page {
@@ -30,15 +32,17 @@ a, a:link, a:active, a:visited {
   text-decoration: none;
 }
 
-$left-column-width: 55mm;
 
 #left-column {
   position: absolute;
   left: 0;
   top: 0;
-  width: $left-column-width;
+  width: $left-column-width + ($column-gutter-width / 2);
+  padding-right: ($column-gutter-width / 2);
+  height: 100%;
 }
 
 #right-column {
-  padding-left: $left-column-width;
+  padding-left: $left-column-width + $column-gutter-width;
+  height: 100%;
 }

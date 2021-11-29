@@ -1,10 +1,5 @@
-<li class="accomplishment_item">
+<li class="accomplishments-list_item">
   {{ description }}
-  {{#if notes }}
-    <ul class="list-unstyled accomplishment_notes">
-      {{# notes }}
-        <li>{{ this }}</li>
-      {{/ notes }}
-    </ul>
-  {{/if }}
+
+  {{#if notes }}<div class="accomplishments-list_notes">{{ notes }}</div>{{/if }}
 </li>
