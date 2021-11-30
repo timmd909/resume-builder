@@ -84,9 +84,9 @@ accomplishments:
     - description:
         Creation of continuous integration and deployment pipelines in Gitlab.
       notes:
-        Reduced the release process from several hours to about 5 seconds of
-        effort followed by 30 minutes of waiting. A single console command
-        kicked off the release and requires no further input.
+        Reduced the release process from several hours of work, down to a
+        couple seconds typing a single command and followed by 30
+        minutes of waiting.
 
     - description:
         Overseeing migration and rewriting of legacy CodeIgniter code to a
@@ -117,7 +117,7 @@ accomplishments:
         Created new user customizable report functionality for events.
       notes:
         Replaced hardcoded system-wide and limited user reports with a
-        visual report editor and a more flexible backend.
+        visual report editor and a more flexible&nbsp;backend.
 
     - description:
         Completely re-implemented PDF generation to overcome existing
@@ -187,7 +187,7 @@ accomplishments:
       notes:
         We needed a way to store up a dozen or more video streams along
         with other event data and other metadata. This would then allow
-        easy backups and transferring of recording sessions.
+        easy backups and transferring of recording&nbsp;sessions.
 
 experience:
   title: "Work History"
