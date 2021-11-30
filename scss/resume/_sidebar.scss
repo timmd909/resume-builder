@@ -1,7 +1,7 @@
 // Styles for the sidebar sections (skills, OSs, etc)
 
 #contact-info {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 
   .fa {
     color: $brand-green;
@@ -12,6 +12,7 @@
   h3 {
     font-size: 11pt;
     margin: 1rem 0;
+    margin-left: -0.5mm; // tweak to line things up a bit better
   }
 
   .sidebar-section_list {

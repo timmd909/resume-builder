@@ -9,6 +9,10 @@ handlebars.registerHelper('cleanJunk', function (input) {
   return input.replace(/(¥|https:\/\/)/g, '');
 });
 
+handlebars.registerHelper('shortenHash', function (input) {
+  return input.substring(0, 12);
+});
+
 function registerPartial(partialName, filename) {
   handlebars.registerPartial(partialName, fs.readFileSync(filename, 'utf8'));
 }
@@ -30,7 +34,7 @@ module.exports = function (grunt) {
       var context = yaml.load(fs.readFileSync('src/resume.yml', 'utf8'));
       // next, let's add the git revision, but I only care about the first
       // 12 characters.
-      context.head = execSync('git rev-parse HEAD', {'encoding': 'utf8'}).trim().substr(0, 12).toUpperCase();
+      context.head = execSync('git rev-parse HEAD', {'encoding': 'utf8'}).trim();
       // creation date also seems like a useful thing
       var now = new Date();
       context.created = now.toISOString().substr(0, 10);
@@ -40,7 +44,17 @@ module.exports = function (grunt) {
       // lastly, render it out and save it
       var rendered = template(context);
       fs.writeFileSync('build/resume.html', rendered);
-    });
+    }
+  );
+
+  grunt.registerTask(
+    'build:pdf',
+    'Renders the HTML to PDF',
+    function () {
+      const execSync = require("child_process").execSync;
+      execSync('npx pagedjs-cli build/resume.html -o resume.pdf');
+    }
+  );
 
   grunt.registerTask('build', [
     'clean',
@@ -48,5 +62,6 @@ module.exports = function (grunt) {
     'build:mkdir',
     'sass',
     'build:html',
+    'build:pdf',
   ]);
 };

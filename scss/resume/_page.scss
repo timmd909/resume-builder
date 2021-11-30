@@ -17,14 +17,27 @@ body {
 }
 
 @page {
-  margin: 1cm 1.5cm;
+  margin: 1cm 1.5cm 1.25cm 1.5cm;
   font-size: 9pt;
 
   @bottom-left {
-    vertical-align: top;
-    font-size: 8pt;
-    color: $gray-600;
+    @include footer-styles;
+    content: element(footerBottomLeft);
   }
+  @bottom-right {
+    @include footer-styles;
+    content: element(footerBottomRight);
+  }
+}
+
+#footer-bottom-left {
+  @include footer-styles;
+  position: running(footerBottomLeft);
+}
+
+#footer-bottom-right {
+  @include footer-styles;
+  position: running(footerBottomRight);
 }
 
 // handy utility to prevent line breaks in areas
@@ -36,15 +49,15 @@ body {
 // page in the browser.
 a, a:link, a:active, a:visited {
   text-decoration: none;
+  color: inherit;
 }
-
 
 #left-column {
   position: absolute;
   left: 0;
   top: 0;
-  width: $left-column-width + ($column-gutter-width / 2);
-  padding-right: ($column-gutter-width / 2);
+  width: $left-column-width + $column-gutter-width;
+  padding-right: $column-gutter-width;
   height: 100%;
 }
 

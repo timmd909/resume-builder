@@ -1,0 +1,29 @@
+// Place any all mixins here...
+// ... unfortunately at the time of writing, there is only one.
+// It's like the end of Highlander before they got all greedy w/ sequels.
+
+@mixin right-side-list {
+  @extend .list-unstyled;
+  padding-left: ($column-gutter-width / 2);
+
+  > li {
+    position: relative;
+  }
+  > li:before {
+    content: "\f0c8" !important;
+    font-family: FontAwesome;
+    color: $gray-500;
+    position: absolute;
+    font-size: 33%;
+    left: -($column-gutter-width / 2);
+    display: block;
+    width: $column-gutter-width / 2;
+    padding-left: 0.5mm; // to get the text to perfectly line up w/ the bullets
+  }
+}
+
+@mixin footer-styles {
+  vertical-align: top;
+  font-size: 7pt;
+  color: $gray-600;
+}

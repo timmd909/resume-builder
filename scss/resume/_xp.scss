@@ -4,8 +4,8 @@
 .xp {
   // nothing yet
 }
-.xp-1::before { content: "\f244" !important; color: lighten($brand-red, 10%); }
-.xp-2::before { content: "\f243" !important; color: lighten($brand-green, 20%); }
-.xp-3::before { content: "\f242" !important; color: lighten($brand-green, 10%); }
-.xp-4::before { content: "\f241" !important; color: lighten($brand-green, 0%); }
-.xp-5::before { content: "\f240" !important; color: darken($brand-green, 10%); }
+.xp-1::before { content: "\f244" !important; color: $brand-red; }
+.xp-2::before { content: "\f243" !important; color: $brand-green; }
+.xp-3::before { content: "\f242" !important; color: $brand-green; }
+.xp-4::before { content: "\f241" !important; color: $brand-green; }
+.xp-5::before { content: "\f240" !important; color: $brand-green; }

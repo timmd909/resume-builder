@@ -3,12 +3,22 @@
 #work-history-section {
   margin-top: 1rem;
 
+  .work-history_list {
+    @include right-side-list;
+
+    > li:before {
+      color: $brand-blue;
+    }
+  }
+
   .work-history_item {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     align-items: center;
-
+    // this handles keeping the bullets and text in line
+    // with each other, while also keeping the spacing proper
+    line-height: 1.5rem;
   }
 
   .work-history_company {

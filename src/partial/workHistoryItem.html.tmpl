@@ -1,13 +1,13 @@
 <li class="work-history_item">
   <span class="work-history_title">{{ title }}</span>
 
-  <i class="fa fa-fw fa-at text-muted mx-1"></i>
+  <i class="fa fa-fw fa-at mx-1 text-brand-green"></i>
 
   <span class="work-history_company">{{ name }}</span>
 
   <span class="work-history_duration">
     {{ duration.start }}
-    <span class="text-muted mx-1">&ndash;</span>
+    <span class="mx-1 text-brand-red">&ndash;</span>
     {{#if duration.end }}{{ duration.end }}{{ else }}Now{{/if}}
   </span>
 
