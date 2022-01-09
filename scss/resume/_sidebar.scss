@@ -17,21 +17,12 @@
 
   .sidebar-section_list {
     @extend .list-unstyled;
+    &--2-col {
+      columns: 2;
+    }
   }
 
   i.fa-fw {
     margin-right: 0.5rem;
-  }
-}
-
-#tools-section {
-  // hack the sidebar section to wrap into 2 columns
-  .sidebar-section_list {
-    @extend .d-flex;
-    @extend .flex-column;
-    @extend .flex-wrap;
-
-    // this will need updated unfortunately
-    max-height: 70mm;
   }
 }
