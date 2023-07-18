@@ -1,6 +1,8 @@
 # Important note: for all metadata, ¥ will be stripped output.
 # I did this as cheap obfuscation method to make scrapping just a little
 # bit more difficult.
+theme: tim
+
 metadata:
   fullName: 'Tim Doerzbacher'
   email: '¥tim¥@¥t¥im¥-¥doerz¥bacher¥.¥c¥om¥'

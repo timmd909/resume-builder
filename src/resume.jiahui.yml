@@ -1,0 +1,113 @@
+---
+
+theme: jiahui-2023
+
+metadata:
+  fullName: Jiahui Shi
+  email: ¥jiahuis¥art¥@¥gmail¥.¥com¥
+  website: https://jiahuishi.design
+  headline: Scenic Designer & Scenic Artist
+
+education:
+  - name: The high school affiliated to ???
+    degree: ???
+    country: China
+    start_date: 2008
+    end_date: 2012
+
+  - name: Shanghai Theatre Academy
+    degree: BFA Scenic Design
+    country: China
+    start_date: 2012
+    end_date: 2016
+
+  - name: Carnegie Mellon University
+    degree: MFA Scenic Design
+    country: U.S.A.
+    start_date: 2017
+    end_date: 2020
+
+skills:
+  #
+  # Software
+  #
+  - { category: Software, name: VectorWorks, level: 5 }
+  - { category: Software, name: Blender, level: 2 }   # seems high
+  - { category: Software, name: Photoshop, level: 5 }
+  - { category: Software, name: Google Suite, level: 5 }
+  - { category: Software, name: Sketchup, level: 3 }  # seems high
+  - { category: Software, name: 3Ds Max, level: 3 }   # seems high
+
+  #
+  # Scenic Art
+  #
+  - { category: Scenic Art, name: Rendering, level: 5 }
+  - { category: Scenic Art, name: Carpentry, level: 3 }
+  - { category: Scenic Art, name: Stencil Making, level: 5 }
+  - { category: Scenic Art, name: Tools Making, level: 5 }
+  - { category: Scenic Art, name: Perspective, level: 4 }
+  - { category: Scenic Art, name: Foliage, level: 4 }
+  - { category: Scenic Art, name: Wood Grain, level: 5 }
+  - { category: Scenic Art, name: Translucenies, level: 4 }
+  - { category: Scenic Art, name: Faux Marble, level: 5 }
+
+  #
+  # Languages
+  #
+  - { category: Languages, name: Chinese, level: 5 }
+  - { category: Languages, name: English, level: 5 }
+
+  #
+  # Miscellaneous
+  #
+  - { category: Other Skills, name: Hand Drafting, level: 5 }
+  - { category: Other Skills, name: Model Making, level: 5 }
+  - { category: Other Skills, name: Draping???, level: 3 }
+  - { category: Other Skills, name: Laser Cutting, level: 5 } # seems high
+  - { category: Other Skills, name: Stained Glass, level: 4 }
+  - { category: Other Skills, name: 3d Printing, level: 5 }   # definitely high
+
+experience:
+  - title: Scenic Artist
+    company: Lincol Park Performing Art Center
+    location: ???, PA
+    start_date: 2022
+    end_date: null
+
+  - title: Escape Room Space Designer
+    company: Enter the Imaginarium
+    location: ???, PA
+    start_date: 2021
+    end_date: null
+
+  - title: Installation Artist
+    company: Three Rivers Arts Festival
+    location: Pittsburgh, PA
+    start_date: 2022
+    end_date: 2022
+
+  # Not sure if I'd include this one
+  - title: Artist
+    company: Vestige Concept Gallery
+    location: Pittsburgh, PA
+    start_date: 2022
+    end_date: 2022
+
+  - title: Scenic Designer
+    # note how the show_title isn't in all of them. That's intentional
+    show_title: Turn of the Screw
+    company: Carnegie Mellon University
+    location: Pittsburgh, PA
+    start_date: 2020
+    end_date: 2020
+
+  - title: Scenic Designer
+    show_title: Glory Denied
+    company: Pittsburgh Opera
+    location: Pittsburgh, PA
+    start_date: 2019
+    end_date: 2019
+
+  #
+  # continue filling them out here
+  #
