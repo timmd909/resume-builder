@@ -1,0 +1,264 @@
+---
+
+theme: jiahui-2023
+
+metadata:
+  fullName: Jiahui Shi
+  email: ¥jiahuis¥art¥@¥gmail¥.¥com¥
+  website: https://jiahuishi.design
+  headline: Scenic Designer & Scenic Artist
+
+education:
+  - name: The High School Affiliated to CAFA (Central Academy of Fine Arts)
+    # degree: High School
+    country: China
+    start_date: 2008
+    end_date: 2012
+    notes:
+      - See https://www.cafa.com.cn/en/news/details/8323885 for pictures of
+        people Jiahui knows
+
+  - name: Shanghai Theatre Academy
+    degree: BFA Scenic Design
+    country: China
+    start_date: 2012
+    end_date: 2016
+
+  - name: Carnegie Mellon University
+    degree: MFA Scenic Design
+    country: USA
+    start_date: 2017
+    end_date: 2020
+
+skills:
+  #
+  # Software
+  #
+  - { category: Software, name: VectorWorks, level: 5 }
+  - { category: Software, name: Blender, level: 1 }
+  - { category: Software, name: Photoshop, level: 5 }
+  - { category: Software, name: Google Suite, level: 5 }
+  - { category: Software, name: Sketchup, level: 2 }
+  - { category: Software, name: 3Ds Max, level: 2 }
+
+  #
+  # Scenic Art
+  #
+  - { category: Scenic Art, name: Rendering, level: 5 }
+  - { category: Scenic Art, name: Carpentry, level: 3 }
+  - { category: Scenic Art, name: Stencil Making, level: 5 }
+  - { category: Scenic Art, name: Tools Making, level: 5 }
+  - { category: Scenic Art, name: Perspective, level: 4 }
+  - { category: Scenic Art, name: Foliage, level: 4 }
+  - { category: Scenic Art, name: Wood Grain, level: 5 }
+  - { category: Scenic Art, name: Translucenies, level: 4 }
+  - { category: Scenic Art, name: Faux Marble, level: 5 }
+
+  #
+  # Languages
+  #
+  - { category: Languages, name: Chinese, level: 5 }
+  - { category: Languages, name: English, level: 5 }
+
+  #
+  # Miscellaneous
+  #
+  - { category: Other Skills, name: Hand Drafting, level: 5 }
+  - { category: Other Skills, name: Model Making, level: 5 }
+  - { category: Other Skills, name: Drapery, level: 3 }
+  - { category: Other Skills, name: Laser Cutting, level: 3 }
+  - { category: Other Skills, name: Stained Glass, level: 4 }
+  - { category: Other Skills, name: 3d Printing, level: 2 }
+
+experience:
+  - title: Scenic Artist
+    start_date: 2022
+    end_date: null
+    company: Lincoln Park Performing Art Center
+    location: Midland, PA
+    notes:
+      - current main job
+
+  - title: Escape Room Space Designer
+    start_date: 2021
+    end_date: null
+    company: Enter the Imaginarium
+    location: Shaler, PA
+    notes:
+      - Jeff's cool
+      - new and old job
+      - they re-hired me
+
+  - title: Installation Artist
+    start_date: 2022
+    end_date: 2022
+    company: Three Rivers Arts Festival
+    location: Pittsburgh, PA
+    notes:
+      - one-off freelance
+      - have image on website
+
+  # Note: this is for the alternative version of the resume for
+  # applying to art galleries
+  - title: Artist
+    alt_resume: true
+    start_date: 2022
+    end_date: 2022
+    company: Vestige Concept Gallery
+    location: Pittsburgh, PA
+
+  - title: Scenic Designer
+    start_date: 2020
+    end_date: 2020
+    # note how the show_title isn't in all of them. That's intentional.
+    show_title: Turn of the Screw
+    theatre: Alumni Concert Hall
+    director: Kyle Lang
+    company: Carnegie Mellon University
+    location: Pittsburgh, PA
+    notes:
+      - image of the model made for this show is important, show it on new website
+      - director is notabe (might get name recognition)
+
+  - title: Scenic Designer
+    start_date: 2019
+    end_date: 2019
+    show_title: Glory Denied
+    theatre: Pittsburgh Opera
+    director: Matt Haney
+    company: Pittsburgh Opera
+    location: Pittsburgh, PA
+    notes:
+      - good photo on old website
+
+  - title: Scenic Designer & Scenic Artist
+    start_date: 2018
+    end_date: 2018
+    show_title: Dutchman
+    theatre: Rauh Theatre
+    director: Kayla Stokes
+    company: Carnegie Mellon University
+    notes:
+      - location is good
+      - good photos, make sure on website
+      - first time being lead designer in US. Woohoo!
+
+  - title: Scenic Design and Playwright
+    start_date: 2017
+    end_date: 2017
+    show_title: ToNES
+    theatre: Rauh Theatre
+    director: Jialin He
+    company: Carnegie Mellon University
+    notes:
+      - First time doing multiple jobs in US. Woohoo!
+
+  - title: Assistant Scenic Designer
+    start_date: 2017
+    end_date: 2017
+    show_title: Medea/Shulie
+    theatre: Rauh Theatre
+    director: Sara Lyons
+    company: Carnegie Mellon University
+    notes:
+      - first time as Assistant in US. Woohoo!
+      - good photos, make sure on website
+
+  - title: Gallery Exhibition / Artist
+    alt_resume: true
+    start_date: 2016
+    end_date: 2016
+    show_title: Artshake
+    location: Yiyuantang Museum, Shanghai, China
+
+  - title: Curator / Artist
+    show_title: Non-free Shipping Zone
+    alt_resume: true
+    start_date: 2015
+    end_date: 2015
+    location: Shanghai Theatre Academy, Shanghai, China
+    notes:
+      - Without "Free Postage" Area <- what's that??????
+      - job different ???
+
+  - title: Installation Artist
+    show_title: The Street Museum Collaboration
+    start_date: 2015
+    end_date: 2015
+    location: Power Station of Art, Shanghai
+    notes:
+      - photo on old web, use it in new one
+      - great example of model making skills
+      - collaborated w/ a famous artist (Yona Friedman)
+      - http://www.philakashi.com/news/street-museum-exhibition-power-station-of-art
+
+  - title: Scenic Designer & Prop Master
+    show_title: Uncle Vanya
+    director: Lv Yan
+    start_date: 2015
+    end_date: 2015
+    location: Shanghai Theatre, Shanghai, China
+    notes:
+      - good photos should be on website
+      - graduation piece
+
+  - title: Scenic Designer and Prop Master
+    # note: double check the proper title on the prop stuff, but it's close
+    # enough if we're not sure
+    start_date: 2015
+    end_date: 2015
+    show_title: Alcestis
+    theatre: Duanjun Theatre
+    director: Lydia Koniordou
+    location: Shanghai, CN
+    notes:
+      - definitely want to include in new website
+
+  - title: Scenic Designer
+    show_title: Flowers in Time
+    start_date: 2015
+    end_date: 2015
+    director: Sun Zibin
+    location: Newspace, Shanghai China
+    notes:
+      - include photos in new website
+
+  - title: Scenic Designer
+    show_title: Where's Alice & Pigs Lost on the Journey
+    theatre: Super Grand Mall
+    director: Huang Guansong
+    location: Shanghai, China
+    start_date: 2015
+    end_date: 2015
+
+  - title: Assistant Designer
+    alt_resume: true
+    show_title: The 12th Stage Art Exhibition
+    start_date: 2014
+    end_date: 2014
+    location: Jinan, China
+
+  - title: Assistant Scenic Designer & Prop Master
+    show_title: A Generation of Celebrities
+    start_date: 2014
+    end_date: 2014
+    theatre: Shanghai Theatre
+    director: Xinyi Chen
+    location: Shanghai, China
+
+  - title: Prop Master
+    show_title: Restart
+    start_date: 2013
+    end_date: 2013
+    director: Wen Yingying
+    theatre: Black Box
+    location: Shanghai, China
+    notes:
+      - 1st time working in the theatre. Woohoo!
+
+  - title: Assistant Designer
+    alt_resume: true
+    show_title: The 11th Stage Art Exhibition
+    start_date: 2013
+    end_date: 2013
+    location: Guangzhou, China
