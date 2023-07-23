@@ -6,21 +6,25 @@
 //
 
 // Basic overrides for the Timstrap/Bootstrap styling
-@import 'resume/variables';
-@import 'resume/mixins';
+@import './styles/variables';
+@import './styles/mixins';
 
 // Include Timstrap (Bootstrap fork)
-@import '../node_modules/timstrap/scss/timstrap';
+@import 'timstrap/scss/timstrap/color-palette';
+@import 'timstrap/scss/timstrap/variables';
+@import 'bootstrap/scss/bootstrap';
+@import 'timstrap/scss/timstrap/navbar';
+@import 'timstrap/scss/timstrap/type';
 
 //
 // Include the rest of the resume styles
 //
-@import 'resume/page';
-@import 'resume/logo';
-@import 'resume/xp';
-@import 'resume/accomplishments';
-@import 'resume/sidebar';
-@import 'resume/work-history';
+@import './styles/page';
+@import './styles/logo';
+@import './styles/xp';
+@import './styles/accomplishments';
+@import './styles/sidebar';
+@import './styles/work-history';
 
 //
 // Miscellaneous stuff that I don't know where to put...

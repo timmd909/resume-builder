@@ -4,7 +4,7 @@
 
 @mixin right-side-list {
   @extend .list-unstyled;
-  padding-left: ($column-gutter-width / 2);
+  padding-left: calc($column-gutter-width / 2);
 
   > li {
     position: relative;
@@ -15,9 +15,9 @@
     color: $gray-500;
     position: absolute;
     font-size: 33%;
-    left: -($column-gutter-width / 2);
+    left: calc($column-gutter-width / 2 * -1);
     display: block;
-    width: $column-gutter-width / 2;
+    width: calc($column-gutter-width / 2 * -1);
     padding-left: 0.5mm; // to get the text to perfectly line up w/ the bullets
   }
 }

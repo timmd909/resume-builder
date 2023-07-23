@@ -1,12 +1,5 @@
-//
-// console.log('process.argv =' , process.argv);
-//
-// if (process.argv.length < 2) {
-//   throw new Error('Breh, which resume YAML file?');
-// }
-
 require('colors');
-// const fs = require('fs')
+const fs = require('fs')
 
 const path = require('path');
 
@@ -18,24 +11,29 @@ require('./handlebarsHelper');
 const resumeLoader = require('./resumeLoader');
 const templateLoader = require('./templateLoader');
 const renderHTML2PDF = require('./renderHTML2PDF');
+const compileSass = require('./compileSass.js');
+const copyAssets = require('./copyAssets.js');
+const cleanBuildDir = require('./cleanBuildDir.js');
 
 if (!argv._[0]) {
   console.error('Please supply a resume YAML file'.red.bold);
   process.exit(1);
 }
 
-require('./copyAssets.js');
 
 const RESUME_YAML_FILENAME = path.join(process.env.INIT_CWD, argv._[0]);
-
-console.log('RESUME_YAML_FILENAME =' , RESUME_YAML_FILENAME);
+const RESUME_HTML_FILENAME = path.join(process.cwd(), 'build/resume.html');
 
 let context = resumeLoader(RESUME_YAML_FILENAME);
 
+cleanBuildDir();
+copyAssets(context);
+compileSass(context);
 const template = templateLoader(context);
 const renderedHTML = template(context);
+fs.writeFileSync(RESUME_HTML_FILENAME, renderedHTML);
 
-renderHTML2PDF(renderedHTML);
+console.log('build/ is complete, rendering PDF...');
 
-// console.log(`Outputting to ${OUTPUT_FILENAME}`);
-// fs.writeFileSync('build/resume.html', rendered);
+// wait a sec for things to settle before rendering the PDF
+setTimeout(renderHTML2PDF, 1000);

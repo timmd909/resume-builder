@@ -1,35 +1,53 @@
 const vfs = require('vinyl-fs');
+const path = require('path');
 const glob = require('glob');
 
-console.log('Copying assets to build/');
+const vfsOpts = {
+  encoding: false, // don't fuck up assets as we copy them by trying
+  // to convert binary data to UTF-8
+}
 
-//
-// BOOTSTRAP + JQUERY
-//
-vfs
-  .src(['node_modules/bootstrap/dist/js/*'])
-  .pipe(vfs.dest('./build/js'));
+function commonStuff() {
+  console.log('Copying assets to build/');
 
-vfs
-  .src(['node_modules/jquery/dist/*.js'])
-  .pipe(vfs.dest('./build/js'));
+  //
+  // BOOTSTRAP + JQUERY
+  //
+  vfs
+    .src(['node_modules/bootstrap/dist/js/*'], vfsOpts)
+    .pipe(vfs.dest('./build/js'));
 
-//
-// COMFORTAA
-//
+  vfs
+    .src(['node_modules/jquery/dist/*.js'], vfsOpts)
+    .pipe(vfs.dest('./build/js'));
 
-vfs
-  .src(['node_modules/fontsource-comfortaa/*'])
-  .pipe(vfs.dest('./build/comfortaa'));
+  //
+  // COMFORTAA
+  //
 
-//
-// FONT AWESOME
-//
+  vfs
+    .src(['node_modules/fontsource-comfortaa/**'], vfsOpts)
+    .pipe(vfs.dest('./build/comfortaa/'));
 
-vfs
-  .src(['node_modules/fork-awesome/css/*'])
-  .pipe(vfs.dest('./build/css'));
+  //
+  // FONT AWESOME
+  //
 
-vfs
-  .src(['node_modules/fork-awesome/fonts/*'])
-  .pipe(vfs.dest('./build/fonts'));
+  vfs
+    .src('node_modules/fork-awesome/css/*', vfsOpts)
+    .pipe(vfs.dest('./build/css'));
+
+  vfs
+    .src('node_modules/fork-awesome/fonts/*', vfsOpts)
+    .pipe(vfs.dest('./build/fonts'));
+}
+
+function copyAssets(context) {
+  commonStuff();
+
+  vfs
+    .src([path.join(process.cwd(), 'themes', context.theme, 'images/*')])
+    .pipe(vfs.dest('./build/images'));
+}
+
+module.exports = copyAssets;
