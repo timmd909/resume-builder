@@ -23,9 +23,9 @@ module.exports = {
     src: '*',
     dest: 'build/assets/',
   },
-  fontawesome: {
+  forkawesome: {
     expand: true,
-    cwd: 'node_modules/font-awesome/',
+    cwd: 'node_modules/fork-awesome/',
     dest: 'build/',
     src: [
       'css/**',
