@@ -1,7 +1,7 @@
 # Important note: for all metadata, ¥ will be stripped output.
 # I did this as cheap obfuscation method to make scrapping just a little
 # bit more difficult.
-theme: tim
+theme: tim-2021
 
 metadata:
   fullName: 'Tim Doerzbacher'
