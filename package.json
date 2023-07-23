@@ -16,8 +16,8 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "express": "^4.17.1",
-    "font-awesome": "github:FortAwesome/Font-Awesome#v4.7.0",
     "fontsource-comfortaa": "^2.1.2",
+    "fork-awesome": "^1.2.0",
     "grunt": "^1.1.0",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
@@ -29,7 +29,7 @@
     "load-grunt-config": "^3.0.1",
     "load-grunt-tasks": "^5.1.0",
     "lodash": "^4.17.15",
-    "node-sass": "^4.14.1",
+    "node-sass": "^9.0.0",
     "pagedjs": "^0.2.0",
     "pagedjs-cli": "^0.1.6",
     "puppeteer": "^3.0.2",
