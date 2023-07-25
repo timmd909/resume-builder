@@ -15,6 +15,7 @@ const sassOptions = {
 function compileSass(context) {
   const themeRootDir = path.join(process.cwd(), 'themes', context.theme);
   let stylesFilename = path.join(themeRootDir, 'styles.scss');
+  console.log('stylesFilename = ', stylesFilename);
 
   if (!fs.existsSync(stylesFilename)) {
     throw new Error('Could not file styles.scss at ' + stylesFilename);

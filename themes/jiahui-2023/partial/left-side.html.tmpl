@@ -1,0 +1,58 @@
+<section id="name-and-logo-section">
+  <h1>Jiahui Shi</h1>
+  <ul class="list-unstyled">
+    <li>Scenic Designer</li>
+    <li>Scenic Artist</li>
+  </ul>
+  <div id="logo">
+  </div>
+</section>
+
+<section id="about-me-section">
+  Location: pittsburgh
+</section>
+
+<section id="education-section">
+  <h2>Education</h2>
+  <ul class="list-unstyled">
+    {{# education }}
+      <li>
+        <span class="education_dates">
+          {{ start_date }} - {{ end_date }}
+        </span>
+        <span class="education_name">
+          {{ name }}
+        </span>
+        {{# if degree }}
+          <span class="education_degree">
+            {{ degree }}
+          </span>
+        {{/if}}
+      </li>
+    {{/ education }}
+  </ul>
+</section>
+
+<section id="contact-section">
+  <h2>Contact Info</h2>
+  <table class="contact-info">
+    <tbody>
+      <tr>
+        <th>Email</th>
+        <td>
+          <a href="mailto:{{ cleanJunk metadata.email }}">{{ cleanJunk metadata.email }}</a>
+        </td>
+      </tr>
+      <tr>
+        <th>Website</th>
+        <td>
+          <a href="{{ metadata.website }}">{{ cleanJunk metadata.website }}</a>
+        </td>
+      </tr>
+      <tr>
+        <th>References</th>
+        <td>Available upon request</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

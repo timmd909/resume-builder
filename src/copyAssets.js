@@ -40,6 +40,13 @@ function commonStuff() {
   vfs
     .src('node_modules/fork-awesome/fonts/*', vfsOpts)
     .pipe(vfs.dest('./build/fonts'));
+
+  //
+  // THEME FONTS
+  //
+  vfs
+    .src('themes/*/fonts/*', vfsOpts)
+    .pipe(vfs.dest('./build/fonts'));
 }
 
 function copyAssets(context) {

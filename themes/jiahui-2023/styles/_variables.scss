@@ -1,3 +1,12 @@
+$font-size-base: 0.8rem;
+
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.25;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.15;
+$h6-font-size: $font-size-base * 1.0;
+
 // Update the text colors to be more printer friendly
 $gray-100: #fff;
 $gray-200: #eee;
@@ -10,3 +19,6 @@ $gray-800: #333;
 $gray-900: #222;
 $black: #000;
 $body-color: $black;
+
+$left-column-width: 55mm;
+$column-gutter-width: 5mm;
