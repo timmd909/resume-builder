@@ -28,7 +28,7 @@
     "lodash": "^4.17.15",
     "mkdirp": "^3.0.1",
     "node-sass": "^9.0.0",
-    "pagedjs": "^0.2.0",
+    "pagedjs": "^0.4.3",
     "pagedjs-cli": "^0.1.6",
     "puppeteer": "^3.0.2",
     "sass": "^1.64.1",
