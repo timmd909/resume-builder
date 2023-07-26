@@ -26,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Quicksand, $font-family-sans-serif;
   font-weight: bold;
   letter-spacing: 0.5pt;
-  background: yellow;
 }
 
 .ugly-outline { // fer debuggin'
@@ -71,4 +70,52 @@ html {
   width: 100%;
   padding-left: $left-column-width + $column-gutter-width;
   height: 100%;
+}
+
+
+#experiences {
+  margin-bottom: 1rem;
+
+  .experience {
+    display: flex;
+
+
+    .date-range {
+      width: 20mm;
+      margin-right: 2pt;
+    }
+
+    .show_title {
+      width: 40mm;
+      margin-right: 2pt;
+    }
+    .company {
+      width: 40mm;
+      margin-right: 2pt;
+    }
+
+    .director {
+      margin-right: 2pt;
+      width: 25mm;
+    }
+
+    .title {
+      margin-right: 2pt;
+    }
+
+    .location {
+      margin-right: 2pt;
+    }
+  } // .experience
+}
+
+
+#skills {
+  .skill-category {
+    display: flex;
+    flex-direction: row;
+  }
+  .skill-category_name {
+    width: 20mm;
+  }
 }

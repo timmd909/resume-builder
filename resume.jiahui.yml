@@ -34,41 +34,49 @@ skills:
   #
   # Software
   #
-  - { category: Software, name: VectorWorks, level: 5 }
-  - { category: Software, name: Blender, level: 1 }
-  - { category: Software, name: Photoshop, level: 5 }
-  - { category: Software, name: Google Suite, level: 5 }
-  - { category: Software, name: Sketchup, level: 2 }
-  - { category: Software, name: 3Ds Max, level: 2 }
+  - category_name: Software
+    items:
+    - { name: VectorWorks, level: 5 }
+    - { name: Blender, level: 2 }
+    - { name: Photoshop, level: 5 }
+    - { name: Google Suite, level: 5 }
+    - { name: Sketchup, level: 3 }
+    - { name: 3Ds Max, level: 3 }
 
   #
   # Scenic Art
   #
-  - { category: Scenic Art, name: Rendering, level: 5 }
-  - { category: Scenic Art, name: Carpentry, level: 3 }
-  - { category: Scenic Art, name: Stencil Making, level: 5 }
-  - { category: Scenic Art, name: Tools Making, level: 5 }
-  - { category: Scenic Art, name: Perspective, level: 4 }
-  - { category: Scenic Art, name: Foliage, level: 4 }
-  - { category: Scenic Art, name: Wood Grain, level: 5 }
-  - { category: Scenic Art, name: Translucenies, level: 4 }
-  - { category: Scenic Art, name: Faux Marble, level: 5 }
+  - category_name: Scenic Art
+    items:
+      - { name: Rendering, level: 5 }
+      - { name: Carpentry, level: 3 }
+      - { name: Stencil Making, level: 5 }
+      - { name: Tools Making, level: 5 }
+      - { name: Perspective, level: 4 }
+      - { name: Foliage, level: 4 }
+      - { name: Wood Grain, level: 5 }
+      - { name: Translucenies, level: 4 }
+      - { name: Faux Marble, level: 5 }
 
   #
   # Languages
   #
-  - { category: Languages, name: Chinese, level: 5 }
-  - { category: Languages, name: English, level: 5 }
+  - category_name: Languages
+    items:
+    - { name: Chinese, level: 5 }
+    - { name: English, level: 5 }
 
   #
   # Miscellaneous
   #
-  - { category: Other Skills, name: Hand Drafting, level: 5 }
-  - { category: Other Skills, name: Model Making, level: 5 }
-  - { category: Other Skills, name: Drapery, level: 3 }
-  - { category: Other Skills, name: Laser Cutting, level: 3 }
-  - { category: Other Skills, name: Stained Glass, level: 4 }
-  - { category: Other Skills, name: 3d Printing, level: 2 }
+  - category_name: Other Skills
+    items:
+    - { name: Hand Drafting, level: 5 }
+    - { name: Model Making, level: 5 }
+    - { name: Drapery, level: 3 }
+    - { name: Laser Cutting, level: 3 }
+    - { name: Stained Glass, level: 4 }
+    - { name: 3d Printing, level: 2 }
 
 experience:
   - title: Scenic Artist
@@ -112,7 +120,7 @@ experience:
     end_date: 2020
     # note how the show_title isn't in all of them. That's intentional.
     show_title: Turn of the Screw
-    theatre: Alumni Concert Hall
+    theatre: Alumni Concert Hall, CMU
     director: Kyle Lang
     company: Carnegie Mellon University
     location: Pittsburgh, PA
@@ -135,7 +143,7 @@ experience:
     start_date: 2018
     end_date: 2018
     show_title: Dutchman
-    theatre: Rauh Theatre
+    theatre: Rauh Theatre, CMU
     director: Kayla Stokes
     company: Carnegie Mellon University
     notes:
@@ -147,7 +155,7 @@ experience:
     start_date: 2017
     end_date: 2017
     show_title: ToNES
-    theatre: Rauh Theatre
+    theatre: Rauh Theatre, CMU
     director: Jialin He
     company: Carnegie Mellon University
     notes:
@@ -157,7 +165,7 @@ experience:
     start_date: 2017
     end_date: 2017
     show_title: Medea/Shulie
-    theatre: Rauh Theatre
+    theatre: Rauh Theatre, CMU
     director: Sara Lyons
     company: Carnegie Mellon University
     notes:
@@ -208,7 +216,7 @@ experience:
     start_date: 2015
     end_date: 2015
     show_title: Alcestis
-    theatre: Duanjun Theatre
+    theatre: Duanjun Theatre, China
     director: Lydia Koniordou
     location: Shanghai, CN
     notes:
@@ -225,7 +233,7 @@ experience:
 
   - title: Scenic Designer
     show_title: Where's Alice & Pigs Lost on the Journey
-    theatre: Super Grand Mall
+    theatre: Super Grand Mall, China
     director: Huang Guansong
     location: Shanghai, China
     start_date: 2015
@@ -242,7 +250,7 @@ experience:
     show_title: A Generation of Celebrities
     start_date: 2014
     end_date: 2014
-    theatre: Shanghai Theatre
+    theatre: Shanghai Theatre, China
     director: Xinyi Chen
     location: Shanghai, China
 
@@ -251,7 +259,7 @@ experience:
     start_date: 2013
     end_date: 2013
     director: Wen Yingying
-    theatre: Black Box
+    theatre: Black Box, China
     location: Shanghai, China
     notes:
       - 1st time working in the theatre. Woohoo!

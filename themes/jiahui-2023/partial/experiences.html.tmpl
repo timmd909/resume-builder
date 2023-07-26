@@ -1,0 +1,40 @@
+<div id="experiences">
+  <h2>Experience</h2>
+    {{# experience }}
+      <div class="experience">
+        <div class="date-range">
+          {{#if (sameThing start_date end_date) }}
+            <span class="date-range_start">{{ start_date }}</span>
+          {{ else }}
+            <span class="date-range_start">{{ start_date }}</span>
+            -
+            {{#if end_date}}
+              <span class="date-range_end">{{ end_date }}</span>
+            {{ else }}
+              <span class="date-range_end">Present</span>
+            {{/if}}
+
+          {{/if}}
+        </div>
+
+        {{#if show_title}}
+          <div class="show_title">{{ show_title }}</div>
+        {{else}}
+          {{#if company}}
+            <div class="company">{{ company }}</div>
+          {{/if}}
+        {{/if}}
+
+        {{#if director}}
+          <div class="director">Dir: {{ director }}</div>
+        {{/if}}
+        <div class="title">{{ title }}</div>
+
+        {{#if theatre}}
+          <div class="theatre">{{ theatre }}</div>
+        {{else}}
+          <div class="location">{{ location }}</div>
+        {{/if}}
+      </div>
+    {{/experience}}
+</div>
