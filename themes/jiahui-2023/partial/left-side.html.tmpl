@@ -12,26 +12,6 @@
   Location: pittsburgh
 </section>
 
-<section id="education-section">
-  <h2>Education</h2>
-  <ul class="list-unstyled">
-    {{# education }}
-      <li>
-        <span class="education_dates">
-          {{ start_date }} - {{ end_date }}
-        </span>
-        <span class="education_name">
-          {{ name }}
-        </span>
-        {{# if degree }}
-          <span class="education_degree">
-            {{ degree }}
-          </span>
-        {{/if}}
-      </li>
-    {{/ education }}
-  </ul>
-</section>
 
 <section id="contact-section">
   <h2>Contact Info</h2>
@@ -55,4 +35,8 @@
       </tr>
     </tbody>
   </table>
+</section>
+
+<section id="skills-section">
+  {{> skills }}
 </section>

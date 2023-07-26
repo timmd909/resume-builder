@@ -73,8 +73,12 @@ html {
 }
 
 
+#contact-section {
+  margin-bottom: $standard-section-bottom-margin;
+}
+
 #experiences {
-  margin-bottom: 1rem;
+  margin-bottom: $standard-section-bottom-margin;
 
   .experience {
     display: flex;
