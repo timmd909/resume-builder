@@ -1,20 +1,31 @@
-<section id="education-section">
+<section id="education">
   <h2>Education</h2>
-  <ul class="list-unstyled">
-    {{# education }}
-      <li>
-        <span class="education_dates">
-          {{ start_date }} - {{ end_date }}
-        </span>
-        <span class="education_name">
-          {{ name }}
-        </span>
-        {{# if degree }}
-          <span class="education_degree">
-            {{ degree }}
+
+  {{# education}}
+    <div class="school">
+
+      {{> date-range }}
+
+      <div class="details">
+
+        <div class="details_top">
+          <span class="name">
+            {{ name }}
           </span>
-        {{/if}}
-      </li>
-    {{/ education }}
-  </ul>
+
+          {{# if degree }}
+            <span class="degree">{{ degree }}</span>
+          {{/if}}
+
+        </div>
+
+        <div class="details_bottom">
+          <div class="location">{{ location }}</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  {{/education}}
 </section>

@@ -1,23 +1,25 @@
 <section id="experiences">
+
   <h2>Experience</h2>
-    {{# experience }}
-      <div class="experience">
 
-        {{> date-range }}
+  {{# experience }}
+    <div class="experience">
 
-        <div class="details">
+      {{> date-range }}
 
-          <div class="details_top">
-            <div class="company">{{ company }}</div>
-            <div class="location">{{ location }}</div>
-          </div>
+      <div class="details">
 
-          <div class="details_bottom">
-            <div class="title">{{ title }}</div>
-          </div>
+        <div class="details_top">
+          <div class="company">{{ company }}</div>
+          <div class="job-title">{{ title }}</div>
+        </div>
 
-        </div><!-- / .details -->
+        <div class="details_bottom">
+          <div class="location">{{ location }}</div>
+        </div>
 
-      </div>
-    {{/experience}}
+      </div><!-- / .details -->
+
+    </div>
+  {{/experience}}
 </section>

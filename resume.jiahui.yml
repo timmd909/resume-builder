@@ -9,26 +9,26 @@ metadata:
   headline: Scenic Designer & Scenic Artist
 
 education:
+  - name: Carnegie Mellon University
+    degree: MFA Scenic Design
+    location: Pittsburgh, PA, USA
+    start_date: 2017
+    end_date: 2020
+
+  - name: Shanghai Theatre Academy
+    degree: BFA Scenic Design
+    location: Shanghai, China
+    start_date: 2012
+    end_date: 2016
+
   - name: The High School Affiliated to CAFA (Central Academy of Fine Arts)
     # degree: High School
-    country: China
+    location: Beijing, China
     start_date: 2008
     end_date: 2012
     notes:
       - See https://www.cafa.com.cn/en/news/details/8323885 for pictures of
         people Jiahui knows
-
-  - name: Shanghai Theatre Academy
-    degree: BFA Scenic Design
-    country: China
-    start_date: 2012
-    end_date: 2016
-
-  - name: Carnegie Mellon University
-    degree: MFA Scenic Design
-    country: USA
-    start_date: 2017
-    end_date: 2020
 
 skills:
   #
@@ -36,12 +36,13 @@ skills:
   #
   - category_name: Software
     items:
-    - { name: VectorWorks, level: 5 }
-    - { name: Photoshop, level: 5 }
-    - { name: Google Suite, level: 5 }
-    - { name: Sketchup, level: 3 }
-    - { name: 3Ds Max, level: 3 }
-    - { name: Blender, level: 2 }
+      - { name: VectorWorks, level: 5 }
+      - { name: Photoshop, level: 5 }
+      - { name: Google Suite, level: 5 }
+      - { name: Procreate, level: 4 }
+      - { name: Sketchup, level: 3 }
+      - { name: 3Ds Max, level: 3 }
+      - { name: Blender, level: 2 }
 
   #
   # Scenic Art
@@ -63,7 +64,7 @@ skills:
   #
   - category_name: Languages
     items:
-    - { name: Chinese, level: 5 }
+    - { name: Mandarin Chinese, level: 5 }
     - { name: English, level: 5 }
 
   #
@@ -71,12 +72,13 @@ skills:
   #
   - category_name: Other Skills
     items:
-    - { name: Hand Drafting, level: 5 }
-    - { name: Model Making, level: 5 }
-    - { name: Stained Glass, level: 4 }
-    - { name: Drapery, level: 3 }
-    - { name: Laser Cutting, level: 3 }
-    - { name: 3d Printing, level: 2 }
+      - { name: Hand Drafting, level: 5 }
+      - { name: Model Making, level: 5 }
+      - { name: Stained Glass, level: 4 }
+      - { name: Drapery, level: 3 }
+      - { name: Laser Cutting, level: 3 }
+      - { name: 3d Printing, level: 2 }
+      - { name: Procrastination, level: 1 }
 
 experience:
   - title: Scenic Artist
@@ -136,7 +138,7 @@ experience:
     company: The Street Museum Collaboration
     start_date: 2015
     end_date: 2015
-    location: Power Station of Art, Shanghai
+    location: Power Station of Art, Shanghai, China
     notes:
       - photo on old web, use it in new one
       - great example of model making skills
@@ -173,6 +175,7 @@ shows:
     end_date: 2018
     show_title: Dutchman
     theatre: Rauh Theatre, CMU
+    location: Pittsburgh, PA
     director: Kayla Stokes
     company: Carnegie Mellon University
     notes:
@@ -185,6 +188,7 @@ shows:
     end_date: 2017
     show_title: ToNES
     theatre: Rauh Theatre, CMU
+    location: Pittsburgh, PA
     director: Jialin He
     company: Carnegie Mellon University
     notes:
@@ -195,6 +199,7 @@ shows:
     end_date: 2017
     show_title: Medea/Shulie
     theatre: Rauh Theatre, CMU
+    location: Pittsburgh, PA
     director: Sara Lyons
     company: Carnegie Mellon University
     notes:
@@ -206,7 +211,8 @@ shows:
     director: Lv Yan
     start_date: 2015
     end_date: 2015
-    location: Shanghai Theatre, Shanghai, China
+    theatre: Shanghai Theatre
+    location: Shanghai, China
     notes:
       - good photos should be on website
       - graduation piece
@@ -217,9 +223,9 @@ shows:
     start_date: 2015
     end_date: 2015
     show_title: Alcestis
-    theatre: Duanjun Theatre, China
+    theatre: Duanjun Theatre
     director: Lydia Koniordou
-    location: Shanghai, CN
+    location: Shanghai, China
     notes:
       - definitely want to include in new website
 
@@ -228,13 +234,14 @@ shows:
     start_date: 2015
     end_date: 2015
     director: Sun Zibin
-    location: Newspace, Shanghai China
+    theatre: Newspace
+    location: Shanghai, China
     notes:
       - include photos in new website
 
   - title: Scenic Designer
     show_title: Where's Alice & Pigs Lost on the Journey
-    theatre: Super Grand Mall, China
+    theatre: Super Grand Mall
     director: Huang Guansong
     location: Shanghai, China
     start_date: 2015
@@ -247,11 +254,11 @@ shows:
     end_date: 2014
     location: Jinan, China
 
-  - title: Assistant Scenic Designer & Prop Master
+  - title: Prop Master
     show_title: A Generation of Celebrities
     start_date: 2014
     end_date: 2014
-    theatre: Shanghai Theatre, China
+    theatre: Shanghai Theatre
     director: Xinyi Chen
     location: Shanghai, China
 
@@ -260,7 +267,7 @@ shows:
     start_date: 2013
     end_date: 2013
     director: Wen Yingying
-    theatre: Black Box, China
+    theatre: Black Box
     location: Shanghai, China
     notes:
       - 1st time working in the theatre. Woohoo!

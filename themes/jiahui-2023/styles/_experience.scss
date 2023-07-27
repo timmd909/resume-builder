@@ -1,46 +1,14 @@
 #experiences {
-  margin-bottom: $standard-section-bottom-margin;
-  flex-grow: 1;
+  // flex-grow: 1;
 
   .experience {
     display: flex;
     align-items: start;
 
-    .details {
+    .company {
+      min-width: 50mm;
+      margin-right: 2pt;
       flex-grow: 1;
-      @extend .d-flex;
-      @extend .flex-column;
-      .details_top, .details_bottom {
-        display: flex;
-        flex-direction: row;
-      }
-      .details_bottom {
-        font-size: 90%;
-        color: $logo-blue;
-      }
-    }
-
-    .date-range {
-      margin-top: 1pt;
-      margin-right: 2pt;
-      margin-bottom: 1rem;
-      font-size: 80%;
-      min-width: 20mm;
-      width: 20mm;
-    }
-
-    .show_title, .company {
-      width: 50mm;
-      margin-right: 2pt;
-    }
-
-    .director {
-      margin-right: 2pt;
-      width: 25mm;
-    }
-
-    .title {
-      margin-right: 2pt;
     }
 
     .location {
