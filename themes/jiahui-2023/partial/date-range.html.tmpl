@@ -1,0 +1,15 @@
+<div class="date-range">
+
+  {{#if (sameThing start_date end_date) }}
+    <span class="date-range_start">{{ start_date }}</span>
+  {{ else }}
+    <span class="date-range_start">{{ start_date }}</span>
+    &ndash;
+    {{#if end_date}}
+      <span class="date-range_end">{{ end_date }}</span>
+    {{ else }}
+      <span class="date-range_end">Present</span>
+    {{/if}}
+
+  {{/if}}
+</div>

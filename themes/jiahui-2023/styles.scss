@@ -48,6 +48,7 @@ html {
 }
 body {
   margin: 0 auto;
+  height: 100%;
 }
 
 @page {
@@ -62,21 +63,25 @@ body {
   // flex-direction: row;
   // flex-grow: 1;
   width: 100%;
+  height: 100%;
 }
 
 #left-column {
   // position: absolute;
   // left: 0;
   // top: 0;
-  width: $left-column-width + $column-gutter-width;
-  padding-right: $column-gutter-width;
+  width: $left-column-width + calc($column-gutter-width / 2);
+  padding-right: calc($column-gutter-width / 2);
   height: 100%;
+  border-right: 1pt solid $gray-400;
 }
 
 #right-column {
   // width: 100%;
   // padding-left: $left-column-width + $column-gutter-width;
   height: 100%;
+  flex-grow: 1;
+  padding-left: calc($column-gutter-width / 2);
 }
 
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
