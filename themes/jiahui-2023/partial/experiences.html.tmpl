@@ -7,7 +7,7 @@
             <span class="date-range_start">{{ start_date }}</span>
           {{ else }}
             <span class="date-range_start">{{ start_date }}</span>
-            -
+            <i class="fa fa-long-arrow-right text-light-gray mx-1"></i>
             {{#if end_date}}
               <span class="date-range_end">{{ end_date }}</span>
             {{ else }}
@@ -17,24 +17,29 @@
           {{/if}}
         </div>
 
-        {{#if show_title}}
-          <div class="show_title">{{ show_title }}</div>
-        {{else}}
-          {{#if company}}
-            <div class="company">{{ company }}</div>
+        <div class="details">
+
+          {{#if show_title}}
+            <div class="show_title">{{ show_title }}</div>
+          {{else}}
+            {{#if company}}
+              <div class="company">{{ company }}</div>
+            {{/if}}
           {{/if}}
-        {{/if}}
 
-        {{#if director}}
-          <div class="director">Dir: {{ director }}</div>
-        {{/if}}
-        <div class="title">{{ title }}</div>
+          {{#if director}}
+            <div class="director">Dir: {{ director }}</div>
+          {{/if}}
+          <div class="title">{{ title }}</div>
 
-        {{#if theatre}}
-          <div class="theatre">{{ theatre }}</div>
-        {{else}}
-          <div class="location">{{ location }}</div>
-        {{/if}}
+          {{#if theatre}}
+            <div class="theatre">{{ theatre }}</div>
+          {{else}}
+            <div class="location">{{ location }}</div>
+          {{/if}}
+
+        </div><!-- / .details -->
+
       </div>
     {{/experience}}
 </div>

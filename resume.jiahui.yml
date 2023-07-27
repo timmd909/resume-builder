@@ -37,11 +37,11 @@ skills:
   - category_name: Software
     items:
     - { name: VectorWorks, level: 5 }
-    - { name: Blender, level: 2 }
     - { name: Photoshop, level: 5 }
     - { name: Google Suite, level: 5 }
     - { name: Sketchup, level: 3 }
     - { name: 3Ds Max, level: 3 }
+    - { name: Blender, level: 2 }
 
   #
   # Scenic Art
@@ -49,14 +49,14 @@ skills:
   - category_name: Scenic Art
     items:
       - { name: Rendering, level: 5 }
-      - { name: Carpentry, level: 3 }
       - { name: Stencil Making, level: 5 }
       - { name: Tools Making, level: 5 }
+      - { name: Wood Grain, level: 5 }
+      - { name: Faux Marble, level: 5 }
       - { name: Perspective, level: 4 }
       - { name: Foliage, level: 4 }
-      - { name: Wood Grain, level: 5 }
       - { name: Translucenies, level: 4 }
-      - { name: Faux Marble, level: 5 }
+      - { name: Carpentry, level: 3 }
 
   #
   # Languages
@@ -73,9 +73,9 @@ skills:
     items:
     - { name: Hand Drafting, level: 5 }
     - { name: Model Making, level: 5 }
+    - { name: Stained Glass, level: 4 }
     - { name: Drapery, level: 3 }
     - { name: Laser Cutting, level: 3 }
-    - { name: Stained Glass, level: 4 }
     - { name: 3d Printing, level: 2 }
 
 experience:

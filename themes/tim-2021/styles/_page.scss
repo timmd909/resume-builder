@@ -18,7 +18,7 @@ body {
 
 @page {
   margin: 1cm 1.5cm 1.25cm 1.5cm;
-  font-size: 9pt;
+  // font-size: 9pt;
 
   @bottom-left {
     @include footer-styles;

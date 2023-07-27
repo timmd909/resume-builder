@@ -1,0 +1,38 @@
+#experiences {
+  margin-bottom: $standard-section-bottom-margin;
+
+  .experience {
+    display: flex;
+
+    .details {
+      flex-grow: 1;
+      @extend .d-flex;
+      @extend .flex-row;
+      @extend .flex-wrap;
+    }
+
+    .date-range {
+      min-width: 25mm;
+      width: 25mm;
+      margin-right: 2pt;
+    }
+
+    .show_title, .company {
+      width: 50mm;
+      margin-right: 2pt;
+    }
+
+    .director {
+      margin-right: 2pt;
+      width: 25mm;
+    }
+
+    .title {
+      margin-right: 2pt;
+    }
+
+    .location {
+      margin-right: 2pt;
+    }
+  } // .experience
+}

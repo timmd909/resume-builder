@@ -2,18 +2,18 @@
   <h2>Skills</h2>
   {{# skills }}
     <div class="skill-category">
-      <div class="skill-category_name">
+      <label>
         {{ category_name }}
-      </div>
-      <div class="skill-category_skills">
+      </label>
+      <div class="skill-category_list">
         {{#items}}
-          <div>
+          <div class="skill-category_skill-wrapper">
             <span class="skill-category_level">
               {{# if (sameThing level 1) }}
-                <i class="fa fa-fw fa-battery-0 text-warning"></i>
+                <i class="fa fa-fw fa-battery-0"></i>
               {{/if }}
               {{# if (sameThing level 2) }}
-                <i class="fa fa-fw fa-battery-1 text-warning"></i>
+                <i class="fa fa-fw fa-battery-1"></i>
               {{/if }}
               {{# if (sameThing level 3) }}
                 <i class="fa fa-fw fa-battery-2"></i>
@@ -22,7 +22,7 @@
                 <i class="fa fa-fw fa-battery-3"></i>
               {{/if }}
               {{# if (sameThing level 5) }}
-                <i class="fa fa-fw fa-battery-4 text-success"></i>
+                <i class="fa fa-fw fa-battery-4"></i>
               {{/if }}
             </span>
 

@@ -11,14 +11,19 @@
   </head>
   <body>
     <div id="main-container">
+      {{> header }}
 
-      <div id="left-column">
-        {{> left-side }}
-      </div>
+      <div class="d-flex flex-row">
 
-      <div id="right-column">
-        {{> right-side }}
-      </div>
+        <div id="left-column">
+          {{> left-side }}
+        </div>
+
+        <div id="right-column">
+          {{> right-side }}
+        </div>
+
+      </div><!-- / .d-flex -->
 
     </div>
   </body>

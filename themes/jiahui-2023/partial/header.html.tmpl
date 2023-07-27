@@ -1,0 +1,16 @@
+<div id="page-header">
+  <div class="name-and-title">
+    <h1>{{ metadata.fullName }}</h1>
+    <h2>
+      Scenic Designer &amp; Scenic Artist
+    </h2>
+    <ul class="contact-info">
+      <i class="fa fa-envelope"></i>
+      <a href="mailto:{{ cleanJunk metadata.email }}">{{ cleanJunk metadata.email }}</a>
+
+      <i class="fa fa-link"></i>
+      <a href="{{ metadata.website }}">{{ cleanJunk metadata.website }}</a>
+    </ul>
+  </div>
+  <img id="logo" src="images/logo.svg">
+</div>

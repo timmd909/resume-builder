@@ -19,6 +19,8 @@ $enable-print-styles: false; // very important to fix the layout!
 // @import 'timstrap/scss/timstrap/navbar';
 // @import 'timstrap/scss/timstrap/type';
 
+@import './styles/experience';
+
 //
 // Miscellaneous stuff that I don't know where to put...
 //
@@ -32,9 +34,20 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #f0f;
 }
 
+.text-logo-blue {
+  color: $logo-blue;
+}
+
+.text-light-gray {
+  color: $gray-400;
+}
+
 html {
   font-size: 9pt;
   height: 100%;
+}
+body {
+  margin: 0 auto;
 }
 
 @page {
@@ -45,81 +58,114 @@ html {
 
 #main-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  // flex-direction: row;
   // flex-grow: 1;
   width: 100%;
 }
 
 #left-column {
-  position: absolute;
-  left: 0;
-  top: 0;
+  // position: absolute;
+  // left: 0;
+  // top: 0;
   width: $left-column-width + $column-gutter-width;
   padding-right: $column-gutter-width;
   height: 100%;
 }
 
-#logo {
-  background: #888; margin: auto;
-  content: 'Logo goes here';
-  width: 1.5in;
-  height: 1.5in;
-}
-
 #right-column {
-  width: 100%;
-  padding-left: $left-column-width + $column-gutter-width;
+  // width: 100%;
+  // padding-left: $left-column-width + $column-gutter-width;
   height: 100%;
 }
 
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
+
+#page-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  border-bottom: 1pt solid $gray-400;
+  margin-bottom: 0.75rem;
+
+  .name-and-title {
+    flex-grow: 1;
+    h1, h2 {
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.75rem;
+      margin-bottom: 2pt;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 4pt;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+  }
+
+  .contact-info {
+    @extend .list-unstyled;
+    @extend .align-items-center;
+    @extend .d-flex;
+    @extend .flex-row;
+    @extend .mb-0;
+
+    i.fa {
+      margin-right: 4pt;
+      color: $logo-blue;
+    }
+    a {
+      margin-right: 12pt;
+      color: $black;
+    }
+  }
+} // #page-header
+
+  #logo {
+    width: 20mm;
+    height: 20mm;
+  }
+
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 
 #contact-section {
   margin-bottom: $standard-section-bottom-margin;
-}
-
-#experiences {
-  margin-bottom: $standard-section-bottom-margin;
-
-  .experience {
-    display: flex;
-
-
-    .date-range {
-      width: 20mm;
-      margin-right: 2pt;
-    }
-
-    .show_title {
-      width: 40mm;
-      margin-right: 2pt;
-    }
-    .company {
-      width: 40mm;
-      margin-right: 2pt;
-    }
-
-    .director {
-      margin-right: 2pt;
-      width: 25mm;
-    }
-
-    .title {
-      margin-right: 2pt;
-    }
-
-    .location {
-      margin-right: 2pt;
-    }
-  } // .experience
 }
 
 
 #skills {
   .skill-category {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    label {
+      font-family: Quicksand;
+      font-weight: bold;
+    }
   }
+
+  .skill-category_level i {
+    color: $logo-blue;
+  }
+
+  .skill-category_skill-list {
+  }
+
+  .skill-category_skill-wrapper {
+    margin: 2pt 0;
+  }
+
+  .skill-category_level {
+    margin-left: 8pt;
+    margin-right: 8pt;
+  } // .skill-category_level
+
   .skill-category_name {
-    width: 20mm;
+    // nothing yet
   }
 }
