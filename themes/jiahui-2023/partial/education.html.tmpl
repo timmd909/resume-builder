@@ -1,0 +1,31 @@
+<section id="education">
+  <h2>Education</h2>
+
+  {{# education}}
+    <div class="school">
+
+      {{> date-range }}
+
+      <div class="details">
+
+        <div class="details_top">
+          <span class="name">
+            {{ name }}
+          </span>
+
+          {{# if degree }}
+            <span class="degree">{{ degree }}</span>
+          {{/if}}
+
+        </div>
+
+        <div class="details_bottom">
+          <div class="location">{{ location }}</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  {{/education}}
+</section>

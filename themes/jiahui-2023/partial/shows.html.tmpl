@@ -1,0 +1,35 @@
+<section id="shows">
+
+  <h2>Theatre</h2>
+
+  {{# shows }}
+    <div class="show">
+
+      {{> date-range }}
+
+      <div class="details">
+        <div class="details_top">
+          <div class="show_title">
+            {{ show_title }}
+            {{#if director}}
+              <span class="director">Dir. {{ director }}</span>
+            {{/if}}
+          </div>
+          <div class="job-title">{{ title }}</div>
+        </div>
+        <div class="details_bottom">
+          <div class="theatre">{{ theatre }}</div>
+          {{#if theatre}}
+            {{#if location}}
+              <span class="mx-1">&ndash;</span>
+            {{/if}}
+          {{/if}}
+          <div class="location">{{ location }}</div>
+        </div>
+      </div>
+    </div>
+
+
+  {{/shows}}
+
+</section>

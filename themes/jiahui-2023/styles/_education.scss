@@ -1,0 +1,20 @@
+#education {
+
+  .school {
+
+    display: flex;
+    align-items: start;
+
+    .name {
+      margin-right: 2pt;
+      flex-grow: 1;
+    }
+
+    .degree {
+      color: $logo-blue;
+      // background: yellow;
+    }
+
+  }
+
+}

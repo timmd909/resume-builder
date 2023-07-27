@@ -1,0 +1,36 @@
+<div id="skills">
+  <h2>Skills</h2>
+  {{# skills }}
+    <div class="skill-category">
+      <label>
+        {{ category_name }}
+      </label>
+      <div class="skill-category_list">
+        {{#items}}
+          <div class="skill-category_skill-wrapper">
+            <span class="skill-category_level">
+              {{# if (sameThing level 1) }}
+                <i class="fa fa-fw fa-battery-0 text-danger"></i>
+              {{/if }}
+              {{# if (sameThing level 2) }}
+                <i class="fa fa-fw fa-battery-1"></i>
+              {{/if }}
+              {{# if (sameThing level 3) }}
+                <i class="fa fa-fw fa-battery-2"></i>
+              {{/if }}
+              {{# if (sameThing level 4) }}
+                <i class="fa fa-fw fa-battery-3"></i>
+              {{/if }}
+              {{# if (sameThing level 5) }}
+                <i class="fa fa-fw fa-battery-4"></i>
+              {{/if }}
+            </span>
+
+            <span class="skill-category_name">{{ name }}</span>
+
+          </div>
+        {{/items}}
+      </div>
+    </div>
+  {{/skills}}
+</div>

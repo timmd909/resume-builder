@@ -1,0 +1,151 @@
+//
+// VARIABLE OVERRIDES
+//
+// This should be kept to a minimum. I want the resume and the website
+// to have the highest level of similarity
+//
+
+// Basic overrides for the Timstrap/Bootstrap styling
+@import './styles/variables';
+@import './styles/mixins';
+@import './styles/fonts';
+
+$enable-print-styles: false; // very important to fix the layout!
+
+// Include Timstrap (Bootstrap fork)
+// @import 'timstrap/scss/timstrap/color-palette';
+@import 'timstrap/scss/timstrap/variables';
+@import 'bootstrap/scss/bootstrap';
+// @import 'timstrap/scss/timstrap/navbar';
+// @import 'timstrap/scss/timstrap/type';
+
+@import './styles/skills';
+@import './styles/right-side';
+@import './styles/experience';
+@import './styles/shows';
+@import './styles/education';
+
+//
+// Miscellaneous stuff that I don't know where to put...
+//
+h1, h2, h3, h4, h5, h6 {
+  font-family: Quicksand, $font-family-sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5pt;
+}
+
+.ugly-outline { // fer debuggin'
+  border: 1px solid #f0f;
+}
+
+.text-logo-blue {
+  color: $logo-blue;
+}
+
+.text-light-gray {
+  color: $gray-400;
+}
+
+html {
+  font-size: 9pt;
+  height: 100%;
+}
+body {
+  margin: 0 auto;
+  height: 100%;
+}
+
+@page {
+  margin: 1cm 1.5cm 1.25cm 1.5cm;
+  font-size: 9pt;
+  padding: 0;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  // flex-direction: row;
+  // flex-grow: 1;
+  width: 100%;
+  height: 100%;
+}
+
+#left-column {
+  width: $left-column-width + calc($column-gutter-width / 2);
+  padding-right: calc($column-gutter-width / 2);
+  height: 100%;
+  border-right: 1pt solid $gray-400;
+}
+
+#right-column {
+  height: 100%;
+  flex-grow: 1;
+  padding-left: calc($column-gutter-width / 2);
+}
+
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
+
+#page-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  border-bottom: 1pt solid $gray-400;
+  margin-bottom: 0.75rem;
+
+  .name-and-title {
+    flex-grow: 1;
+    h1, h2 {
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.75rem;
+      margin-bottom: 2pt;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 4pt;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+  }
+
+  .contact-info {
+    @extend .list-unstyled;
+    @extend .align-items-center;
+    @extend .d-flex;
+    @extend .flex-row;
+    @extend .mb-0;
+
+    i.fa {
+      margin-right: 4pt;
+      color: $logo-blue;
+    }
+    a {
+      margin-right: 12pt;
+      color: $black;
+    }
+  }
+} // #page-header
+
+  #logo {
+    width: 20mm;
+    height: 20mm;
+  }
+
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
+
+#contact-section {
+  margin-bottom: $standard-section-bottom-margin;
+}
+
+#version-info {
+  position: absolute;
+  left: 0; bottom: 0;
+  color: $gray-500;
+  font-size: 7pt;
+  a {
+    color: inherit;
+  }
+}

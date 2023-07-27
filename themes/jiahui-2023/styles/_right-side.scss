@@ -1,0 +1,34 @@
+#education, #shows, #experiences {
+  flex-grow: 1;
+  margin-bottom: $standard-section-bottom-margin;
+
+  .date-range {
+    // margin-top: 1pt;
+    margin-right: 2pt;
+
+    // font-size: 80%;
+    min-width: 25mm;
+    width: 20mm;
+  }
+
+  .details {
+    flex-grow: 1;
+    @extend .d-flex;
+    @extend .flex-column;
+    .details_top, .details_bottom {
+      display: flex;
+      flex-direction: row;
+    }
+    .details_bottom {
+      font-size: 90%;
+      color: $gray-600;
+      font-style: italic;
+    }
+  }
+
+  .job-title {
+    margin-right: 2pt;
+    color: $logo-blue;
+  }
+
+}

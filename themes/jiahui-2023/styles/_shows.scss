@@ -1,0 +1,26 @@
+#shows {
+
+  .show {
+    display: flex;
+    align-items: start;
+
+    .show_title {
+      min-width: 50mm;
+      margin-right: 2pt;
+      flex-grow: 1;
+    }
+
+    .director {
+      margin-left: 4pt;
+      color: $gray-600;
+      font-style: italic;
+      // width: 25mm;
+      &::before {
+        content: '– ';
+      }
+    }
+
+
+  } // .show
+
+} // # shows

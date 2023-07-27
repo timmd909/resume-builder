@@ -1,0 +1,29 @@
+$font-size-base: 0.8rem;
+
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.25;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.15;
+$h6-font-size: $font-size-base * 1.0;
+
+// Update the text colors to be more printer friendly
+$gray-100: #fff;
+$gray-200: #eee;
+$gray-300: #ddd;
+$gray-400: #ccc;
+$gray-500: #bbb;
+$gray-600: #666;
+$gray-700: #555;
+$gray-800: #333;
+$gray-900: #222;
+$black: #000;
+$body-color: $black;
+
+$left-column-width: 35mm;
+$column-gutter-width: 5mm;
+
+$standard-section-bottom-margin: 0.25rem;
+
+// Pantone something, look for Klein Blue
+$logo-blue: #000f9f;

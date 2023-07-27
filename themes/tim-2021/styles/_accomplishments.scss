@@ -3,7 +3,9 @@
     @include right-side-list;
 
     > li:before {
+      font: ForkAwesome;
       color: $brand-blue;
+      content: "\f0c8" !important;
     }
   }
 

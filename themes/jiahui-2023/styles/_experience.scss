@@ -1,0 +1,18 @@
+#experiences {
+  // flex-grow: 1;
+
+  .experience {
+    display: flex;
+    align-items: start;
+
+    .company {
+      min-width: 50mm;
+      margin-right: 2pt;
+      flex-grow: 1;
+    }
+
+    .location {
+      margin-right: 2pt;
+    }
+  } // .experience
+}
