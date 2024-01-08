@@ -25,7 +25,7 @@ Simply run `grunt` to build the latest resume PDF.
 
 How I do it:
 
-* `grunt watch`
+* `npm start $RESUME_YML`
 * Load `build/resume.html` in your favorite browser
 * Sort it out
 

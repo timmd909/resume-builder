@@ -108,14 +108,14 @@ experience:
       - one-off freelance
       - have image on website
 
-  # Note: this is for the alternative version of the resume for
-  # applying to art galleries
-  - title: Artist
-    alt_resume: true
-    start_date: 2022
-    end_date: 2022
-    company: Vestige Concept Gallery
-    location: Pittsburgh, PA
+  # # Note: this is for the alternative version of the resume for
+  # # applying to art galleries
+  # - title: Artist
+  #   alt_resume: true
+  #   start_date: 2022
+  #   end_date: 2022
+  #   company: Vestige Concept Gallery
+  #   location: Pittsburgh, PA
 
   - title: Gallery Exhibition / Artist
     alt_resume: true
@@ -146,6 +146,14 @@ experience:
       - http://www.philakashi.com/news/street-museum-exhibition-power-station-of-art
 
 shows:
+  - title: Additional Scenic Designer & Scenic Artist
+    start_date: 2023
+    end_date: 2023
+    show_title: The Nutcracker
+    theatre: Lincoln Park Performing Arts Center
+    director: Jennifer Verba
+    location: Pittsburgh, PA
+
   - title: Scenic Designer
     start_date: 2020
     end_date: 2020
