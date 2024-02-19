@@ -9,6 +9,12 @@ metadata:
   headline: Scenic Designer & Scenic Artist
 
 education:
+  - name: Cobalt Studios
+    degree: Summer Scene Painting
+    location: White Lake, NY, USA
+    start_date: 2022
+    end_date: 2022
+
   - name: Carnegie Mellon University
     degree: MFA Scenic Design
     location: Pittsburgh, PA, USA
@@ -54,9 +60,10 @@ skills:
       - { name: Tools Making, level: 5 }
       - { name: Wood Grain, level: 5 }
       - { name: Faux Marble, level: 5 }
+      - { name: Translucenies, level: 4 }
+      - { name: Foam Carving, level: 4 }
       - { name: Perspective, level: 4 }
       - { name: Foliage, level: 4 }
-      - { name: Translucenies, level: 4 }
       - { name: Carpentry, level: 3 }
 
   #

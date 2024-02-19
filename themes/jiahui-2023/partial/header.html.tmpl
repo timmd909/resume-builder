@@ -1,16 +1,28 @@
 <div id="page-header">
-  <div class="name-and-title">
-    <h1>{{ metadata.fullName }}</h1>
-    <h2>
-      Scenic Designer &amp; Scenic Artist
-    </h2>
-    <ul class="contact-info">
-      <i class="fa fa-envelope"></i>
-      <a href="mailto:{{ cleanJunk metadata.email }}">{{ cleanJunk metadata.email }}</a>
-
-      <i class="fa fa-link"></i>
-      <a href="{{ metadata.website }}">{{ cleanJunk metadata.website }}</a>
-    </ul>
-  </div>
   <img id="logo" src="images/logo.svg">
+
+  <div class="name-and-title">
+    <div class="d-flex align-items-middle">
+      <div class="flex-grow-1">
+        <h1>{{ metadata.fullName }}</h1>
+        <h2>
+          Scenic Designer &amp; Scenic Artist
+        </h2>
+      </div>
+
+      <div class="d-flex align-items-end">
+        <ul class="contact-info mb-1 text-left">
+          <li>
+            <i class="fa fa-fw fa-link"></i>
+            <a href="{{ metadata.website }}">{{ cleanJunk metadata.website }}</a>
+          </li>
+          <li>
+            <i class="fa fa-fw fa-envelope"></i>
+            <a href="mailto:{{ cleanJunk metadata.email }}">{{ cleanJunk metadata.email }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
 </div>

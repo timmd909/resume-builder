@@ -89,33 +89,35 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
   border-bottom: 1pt solid $gray-400;
-  margin-bottom: 0.75rem;
 
   .name-and-title {
+    margin-left: 1rem;
     flex-grow: 1;
     h1, h2 {
       margin: 0;
     }
     h1 {
-      font-size: 2.75rem;
+      font-size: 2.5rem;
       margin-bottom: 2pt;
     }
     h2 {
-      font-size: 1.5rem;
-      margin-bottom: 4pt;
+      font-size: 1.1rem;
+      margin-bottom: 2pt;
     }
     h3 {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
   }
 
   .contact-info {
     @extend .list-unstyled;
-    @extend .align-items-center;
-    @extend .d-flex;
-    @extend .flex-row;
+    // @extend .align-items-center;
+    // @extend .d-flex;
+    // @extend .flex-row;
+    // @extend .flex-column;
     @extend .mb-0;
 
     i.fa {
@@ -130,8 +132,10 @@ body {
 } // #page-header
 
   #logo {
-    width: 20mm;
-    height: 20mm;
+    // width: 20mm;
+    // height: 20mm;
+    width: 17.5mm;
+    height: 17.5mm;
   }
 
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
