@@ -19,21 +19,14 @@ here's some fun YouTube videos:
 
 ## Usage
 
-Simply run `grunt` to build the latest resume PDF.
+to be determined... but likely something like:
 
-## Development
+```
+make build
+```
 
-How I do it:
+or for a more interactive method by doing
 
-* `npm start $RESUME_YML`
-* Load `build/resume.html` in your favorite browser
-* Sort it out
-
-## Helpful Resources
-
-* [Paged.js](https://www.pagedjs.org/) - The newest way of rendering PDFs.
-  I'm especially really happy with how they do
-  [content in margin boxes](https://www.pagedjs.org/documentation/07-generated-content-in-margin-boxes/).
-  No other HTML->PDF library that I've found has worked as well and been
-  as flexible as Paged.js.
-* [Generating PDF from HTML and Node.js and Puppeteer](https://blog.risingstack.com/pdf-from-html-node-js-puppeteer/) - How the resume used to be generated
+```
+make watch
+```
