@@ -1,0 +1,20 @@
+{
+  "name": "resume-builder-pdf",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Simple PDF renderer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://baicha.lan:3000/tim/resume-builder.git"
+  },
+  "author": "Tim Doerzbacher",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

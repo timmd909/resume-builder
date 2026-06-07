@@ -1,0 +1,12 @@
+services:
+  pdf:
+    build: pdf
+    restart: always
+    ports:
+      - "${PDF_PORT:-8888}:${PDF_PORT:-8888}"
+
+  frontend:
+    build: frontend
+    restart: always
+    ports:
+      - "${FRONTEND_PORT:-8080}:5173"
